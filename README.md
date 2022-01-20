@@ -1,8 +1,16 @@
-# Yes Merketing Website
+# Yes Marketing Website
+
+<a href="https://github.com/youssef-ahamid/landing/blob/master/LICENSE">
+  <img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-yellow.svg" target="_blank" />
+</a>
+
 
 The digital home of one of the biggest marketing agencies in Egypt
 
+
 ## Install Website Locally
+
+[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/youssef-ahamid/landing)
 
 ```bash
 # clone the git repo
