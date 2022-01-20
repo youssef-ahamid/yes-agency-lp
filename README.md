@@ -48,3 +48,4 @@ npm run build
 
 ### Components
 - [`Button`](https://github.com/Yes-Marketing/landing/blob/master/docs/components/Button.md)
+- [`Navbar`](https://github.com/Yes-Marketing/landing/blob/master/docs/components/navbar.md)
