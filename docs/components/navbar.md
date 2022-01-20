@@ -45,7 +45,7 @@ Files/data referenced in Navbar
 
 <br/>
 
-- #### [`Logo.svg`](https://github.com/Yes-Marketing/landing/blob/master/public/images/Logo.svg)
+- #### [`Logo.svg`](https://github.com/Yes-Marketing/landing/blob/master/public/images/logo.svg)
 Logo image file
 
 <br/>
