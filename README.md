@@ -14,7 +14,7 @@ The digital home of one of the biggest marketing agencies in Egypt
 
 ```bash
 # clone the git repo
-git clone https://github.com/youssef-ahamid/landing.git
+git clone https://github.com/Yes-Marketing/landing.git
 
 # install required dependencies
 npm install
@@ -47,4 +47,4 @@ npm run build
 ## Docs
 
 ### Components
-- [`Button`](https://github.com/youssef-ahamid/landing/blob/master/docs/components/Button.md)
+- [`Button`](https://github.com/Yes-Marketing/landing/blob/master/docs/components/Button.md)
