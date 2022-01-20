@@ -45,4 +45,8 @@
     .body-sm {
         @apply font-sans text-sm md:text-lg text-primary;
     }
+
+    html {
+        @apply bg-secondary
+    }
 }
