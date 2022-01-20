@@ -35,3 +35,8 @@ npm run build
 ```
 
 > You can preview the built app with `npm run preview`. This should _not_ be used to serve your app in production.
+
+## Docs
+
+### Components
+- [`Button`](https://github.com/youssef-ahamid/landing/blob/master/docs/components/Button.md)
