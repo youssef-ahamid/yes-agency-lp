@@ -1,9 +1,9 @@
 <script>
-	export let blue, purple, orange, green, primary, secondary, tertiary, disabled, text;
+	export let blue, purple, orange, green, primary, secondary, tertiary, disabled;
 </script>
 
 <span
-	class="py-1 px-3 md:px-5 md:py-1.5 rounded-full max-w-fit mx-1 my-1 md:mx-2 body-sm uppercase font-bold inline-block transition duration-300 ease-out border-2 border-transparent hover:bg-opacity-0 hover:shadow hover:shadow-current"
+	class="py-1 px-3 rounded-full max-w-fit mr-1 my-1 md:mr-2 body-sm uppercase font-bold inline-block transition duration-300 ease-out border-2 border-transparent hover:bg-opacity-0 hover:shadow hover:shadow-current"
 	class:bg-primary={primary}
 	class:bg-secondary={secondary}
 	class:bg-tertiary={tertiary}
@@ -29,5 +29,5 @@
 	class:hover:text-purple={purple}
 	class:hover:text-gray-400={disabled}
 >
-	{text}
+	<slot></slot>
 </span>
