@@ -13,7 +13,7 @@
 			y="0px"
 			viewBox="0 0 172 172"
 			class="text-primary fill-current animate-bounce w-6 h-auto mx-auto transition duration-300 ease-out"
-            class:fill-transparent={Y>40}
+      class:fill-transparent={Y>40}
 			><g
 				fill="none"
 				fill-rule="nonzero"
