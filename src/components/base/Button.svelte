@@ -42,16 +42,17 @@
 			class:text-green={green && ghost}
 			class:text-purple={purple && ghost}
 			class:group-hover:text-secondary={round}
+			class:group-hover:text-primary={ghost}
 			class="transition duration-300 ease-out"><slot /></a
 		>
 		{#if icon}
 			<img class="w-4 h-4 ml-3 md:w-6 md:h-6 md:ml-5" src={icon} alt="icon" />
 		{/if}
 		{#if underlined || ghost}
-			<div class="relative w-full h-3">
+			<div class="relative w-full h-5">
 				{#if underlined}
 					<div
-						class="h-1 rounded-full my-1 w-full transition duration-300 ease-out"
+						class="h-1 rounded-full my-1 w-full transition duration-300 ease-out scale-x-100 group-hover:scale-x-125"
 						class:bg-primary={primary}
 						class:bg-secondary={secondary}
 						class:bg-tertiary={tertiary}
@@ -63,7 +64,7 @@
 				{/if}
 
 				<div
-					class="h-1 rounded-full absolute top-1 transition duration-300 ease-out bg-primary w-full scale-x-0 group-hover:scale-x-100"
+					class="h-1 rounded-full absolute top-1 transition duration-300 ease-out bg-primary shadow-primary shadow-lg w-full scale-x-0 group-hover:scale-x-100"
 				/>
 			</div>
 		{/if}
