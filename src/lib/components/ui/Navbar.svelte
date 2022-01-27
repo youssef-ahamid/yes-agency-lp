@@ -8,7 +8,7 @@
 	}
 </script>
 
-<div class="mx-auto flex w-full items-center justify-between p-6 sm:justify-evenly md:p-12">
+<div class="mx-auto flex w-full items-center justify-between p-6 sm:justify-evenly md:p-12 bg-secondary top-0 inset-x-0 h-24 fixed lg:relative lg:top-8" style="z-index: 800!important;">
 	<a href="/">
 		<svg
 			width="150"
@@ -37,6 +37,7 @@
 	<div class="hidden lg:flex">
 		<Button
 			underlined
+			linkWithin
 			primary={color == 'primary'}
 			secondary={color == 'secondary'}
 			tertiary={color == 'tertiary'}
@@ -44,7 +45,7 @@
 			orange={color == 'orange'}
 			green={color == 'green'}
 			purple={color == 'purple'}
-			to="#start">collaborate</Button
+			to="connect">collaborate</Button
 		>
 		<Button
 			round
@@ -60,12 +61,11 @@
 	</div>
 </div>
 <div
-	class="fixed inset-0 min-h-screen w-full transform bg-secondary bg-opacity-0 transition duration-300 ease-out lg:hidden"
+	class="fixed inset-0 min-h-screen w-full transform bg-secondary bg-opacity-0 transition duration-300 ease-out lg:hidden z-[900]"
 	class:bg-opacity-50={showNav}
-	class:z-[999]={showNav}
 >
 	<div
-		class="fixed right-6 top-7 z-50 flex w-20 flex-wrap justify-end lg:hidden"
+		class="fixed right-6 top-7 z-[950] flex w-20 flex-wrap justify-end lg:hidden"
 		on:click|self={toggleNav}
 	>
 		<div
@@ -93,7 +93,7 @@
 		/>
 	</div>
 	<div
-		class="z-[999] min-h-screen w-64 transform bg-secondary py-4 shadow shadow-primary/50 ring-primary transition duration-500 ease-out lg:hidden"
+		class="z-[999] min-h-screen w-72 transform bg-secondary py-4 shadow shadow-primary/50 ring-primary transition duration-500 ease-out lg:hidden"
 		class:shadow-2xl={showNav}
 		class:-translate-x-full={!showNav}
 		class:translate-x-0={showNav}
@@ -109,6 +109,7 @@
 		<div class="absolute bottom-10 flex flex-wrap justify-center">
 			<Button
 				underlined
+				linkWithin
 				primary={color == 'primary'}
 				secondary={color == 'secondary'}
 				tertiary={color == 'tertiary'}
@@ -116,7 +117,8 @@
 				orange={color == 'orange'}
 				green={color == 'green'}
 				purple={color == 'purple'}
-				to="#start">collaborate</Button
+				to="connect"
+				>collaborate</Button
 			>
 			<Button
 				round
