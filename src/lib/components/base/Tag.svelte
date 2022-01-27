@@ -1,5 +1,5 @@
 <script>
-	export let color;
+	export let color, text;
 </script>
 
 <span
@@ -29,5 +29,9 @@
 	class:hover:text-purple={color == 'purple'}
 	class:hover:text-gray-400={color == 'disabled'}
 >
-	<slot />
+	{#if text}
+		{text}
+	{:else}
+		<slot />
+	{/if}
 </span>
