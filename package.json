@@ -23,6 +23,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"colorthief": "^2.3.2"
+		"colorthief": "^2.3.2",
+		"svelte-scrolling": "^1.1.1"
 	}
 }
