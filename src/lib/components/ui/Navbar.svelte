@@ -1,5 +1,6 @@
 <script>
-	import Button from '../base/Button.svelte';
+	import Button from '$lib/components/base/Button.svelte';
+	import clickOutside from '$lib/actions/clickOutside';
 	export let color;
 	let showNav = false;
 	function toggleNav() {
@@ -7,14 +8,14 @@
 	}
 </script>
 
-<div class="w-full p-6 md:p-12 mx-auto flex justify-between sm:justify-evenly items-center">
+<div class="mx-auto flex w-full items-center justify-between p-6 sm:justify-evenly md:p-12">
 	<a href="/">
 		<svg
 			width="150"
 			height="54"
 			viewBox="0 0 150 54"
 			xmlns="http://www.w3.org/2000/svg"
-			class="w-32 md:w-44 h-auto fixed left-6 top-7 lg:relative lg:top-0 lg:left-0 fill-current transition duration-300 ease-out"
+			class="fixed left-6 top-7 h-auto w-32 fill-current transition duration-300 ease-out md:w-44 lg:relative lg:top-0 lg:left-0"
 			class:hover:text-primary={color == 'primary'}
 			class:hover:text-secondary={color == 'secondary'}
 			class:hover:text-tertiary={color == 'tertiary'}
@@ -30,8 +31,8 @@
 		</svg>
 	</a>
 	<div class="hidden lg:flex">
-		<Button ghost primary to="/about">our work</Button>
-		<Button ghost primary to="/about">what we do</Button>
+		<Button ghost primary to="/projects">our work</Button>
+		<Button ghost primary to="/projects/about">what we do</Button>
 	</div>
 	<div class="hidden lg:flex">
 		<Button
@@ -59,16 +60,16 @@
 	</div>
 </div>
 <div
-	class="lg:hidden min-h-screen w-full fixed inset-0 bg-secondary transform transition duration-300 ease-out bg-opacity-0"
+	class="fixed inset-0 min-h-screen w-full transform bg-secondary bg-opacity-0 transition duration-300 ease-out lg:hidden"
 	class:bg-opacity-50={showNav}
 	class:z-[999]={showNav}
 >
 	<div
-		class="w-20 fixed right-6 top-7 lg:hidden z-50 flex flex-wrap justify-end"
-		on:click={toggleNav}
+		class="fixed right-6 top-7 z-50 flex w-20 flex-wrap justify-end lg:hidden"
+		on:click|self={toggleNav}
 	>
 		<div
-			class="w-16 h-1 rounded-full mb-1.5 transition duration-300 ease-out"
+			class="mb-1.5 h-1 w-16 rounded-full transition duration-300 ease-out"
 			class:bg-primary={color == 'primary'}
 			class:bg-secondary={color == 'secondary'}
 			class:bg-tertiary={color == 'tertiary'}
@@ -80,25 +81,27 @@
 			class:translate-y-4={showNav}
 		/>
 		<div
-			class="w-10 h-1 bg-primary rounded-full my-1.5 transition duration-300 ease-out"
+			class="my-1.5 h-1 w-10 rounded-full bg-primary transition duration-300 ease-out"
 			class:transform={showNav}
 			class:scale-x-150={showNav}
 			class:-translate-x-2={showNav}
 		/>
 		<div
-			class="w-16 h-1 bg-primary rounded-full my-1.5 transition duration-300 ease-out"
+			class="my-1.5 h-1 w-16 rounded-full bg-primary transition duration-300 ease-out"
 			class:transform={showNav}
 			class:-translate-y-4={showNav}
 		/>
 	</div>
 	<div
-		class="lg:hidden min-h-screen py-4 bg-secondary w-64 transform transition duration-500 ease-out ring-primary shadow shadow-primary/50 z-[999]"
+		class="z-[999] min-h-screen w-64 transform bg-secondary py-4 shadow shadow-primary/50 ring-primary transition duration-500 ease-out lg:hidden"
 		class:shadow-2xl={showNav}
 		class:-translate-x-full={!showNav}
 		class:translate-x-0={showNav}
 		class:ring-2={showNav}
+		use:clickOutside
+		on:outclick={() => (showNav ? (showNav = false) : '')}
 	>
-		<img src="images/logo.svg" alt="logo" class="w-32 h-auto p-6" />
+		<img src="/images/logo.svg" alt="logo" class="h-auto w-32 p-6" />
 		<div class="my-20">
 			<Button ghost primary to="/about">our work</Button>
 			<Button ghost primary to="/about">what we do</Button>
@@ -113,8 +116,7 @@
 				orange={color == 'orange'}
 				green={color == 'green'}
 				purple={color == 'purple'}
-				to="#start"
-				class="my-4">collaborate</Button
+				to="#start">collaborate</Button
 			>
 			<Button
 				round
@@ -125,8 +127,7 @@
 				orange={color == 'orange'}
 				green={color == 'green'}
 				purple={color == 'purple'}
-				to="tel:+201200525233"
-				class="my-4">CALL</Button
+				to="tel:+201200525233">CALL</Button
 			>
 		</div>
 	</div>
