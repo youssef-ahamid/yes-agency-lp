@@ -1,4 +1,5 @@
-<slot></slot>
 <script>
-    import '../styles/tailwind.css'
+	import '$lib/styles/tailwind.css';
 </script>
+
+<slot />

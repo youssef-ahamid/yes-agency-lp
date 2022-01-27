@@ -1,21 +1,22 @@
 <script>
-	export let to,
-		round,
-		ghost,
-		underlined,
-		blue,
-		purple,
-		orange,
-		green,
-		primary,
-		secondary,
-		tertiary,
-		icon;
+	export let to;
+	export let round = false;
+	export let ghost = false;
+	export let underlined = false;
+	export let blue = false;
+	export let purple = false;
+	export let orange = false;
+	export let green = false;
+	export let primary = false;
+	export let secondary = false;
+	export let tertiary = false;
+	export let icon = false;
+	export let text = false;
 </script>
 
 <a href={to}>
 	<button
-		class="py-2 md:py-4 px-6 md:px-10 hover:shadow-primary/20 rounded-full flex flex-wrap items-center group transition duration-300 ease-out focus:ring-4 focus:ring-offset-4 focus:ring-current"
+		class="group flex flex-wrap items-center rounded-full py-2 px-6 transition duration-300 ease-out hover:shadow-primary/20 focus:ring-4 focus:ring-current focus:ring-offset-4 md:py-4 md:px-10"
 		class:hover:shadow-lg={round}
 		class:hover:bg-primary={round}
 		class:bg-primary={round && primary}
@@ -43,16 +44,20 @@
 			class:text-purple={purple && ghost}
 			class:group-hover:text-secondary={round}
 			class:group-hover:text-primary={ghost}
-			class="transition duration-300 ease-out"><slot /></a
+			class="focus-visble:outline-primary transition duration-300 ease-out focus-visible:scale-x-[110%]"
+		>
+			{#if text}
+				{text}
+			{/if}<slot /></a
 		>
 		{#if icon}
-			<img class="w-4 h-4 ml-3 md:w-6 md:h-6 md:ml-5" src={icon} alt="icon" />
+			<img class="ml-3 h-4 w-4 md:ml-5 md:h-6 md:w-6" src={icon} alt="icon" />
 		{/if}
 		{#if underlined || ghost}
-			<div class="relative w-full h-5">
+			<div class="relative h-2 w-full">
 				{#if underlined}
 					<div
-						class="h-1 rounded-full my-1 w-full transition duration-300 ease-out scale-x-100 group-hover:scale-x-125"
+						class="my-1 h-1 w-full scale-x-100 rounded-full transition duration-300 ease-out group-hover:scale-x-125"
 						class:bg-primary={primary}
 						class:bg-secondary={secondary}
 						class:bg-tertiary={tertiary}
@@ -64,7 +69,7 @@
 				{/if}
 
 				<div
-					class="h-1 rounded-full absolute top-1 transition duration-300 ease-out bg-primary shadow-primary shadow-lg w-full scale-x-0 group-hover:scale-x-100"
+					class="absolute top-1 h-1 w-full scale-x-0 rounded-full bg-primary shadow-lg shadow-primary transition duration-300 ease-out group-hover:scale-x-100"
 				/>
 			</div>
 		{/if}
