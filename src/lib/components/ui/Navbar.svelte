@@ -8,7 +8,10 @@
 	}
 </script>
 
-<div class="mx-auto flex w-full items-center justify-between p-6 sm:justify-evenly md:p-12 bg-secondary top-0 inset-x-0 h-24 fixed lg:relative lg:top-8" style="z-index: 800!important;">
+<div
+	class="fixed inset-x-0 top-0 mx-auto mb-4 flex h-24 w-full items-center justify-between bg-secondary p-6 sm:justify-evenly md:p-12 lg:relative lg:top-8 lg:mb-12 lg:bg-none"
+	style="z-index: 800!important;"
+>
 	<a href="/">
 		<svg
 			width="150"
@@ -61,7 +64,7 @@
 	</div>
 </div>
 <div
-	class="fixed inset-0 min-h-screen w-full transform bg-secondary bg-opacity-0 transition duration-300 ease-out lg:hidden z-[900]"
+	class="fixed inset-0 z-[900] min-h-screen w-full transform bg-secondary bg-opacity-0 transition duration-300 ease-out lg:hidden"
 	class:bg-opacity-50={showNav}
 >
 	<div
@@ -117,8 +120,7 @@
 				orange={color == 'orange'}
 				green={color == 'green'}
 				purple={color == 'purple'}
-				to="connect"
-				>collaborate</Button
+				to="connect">collaborate</Button
 			>
 			<Button
 				round

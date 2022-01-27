@@ -51,7 +51,7 @@
 				{#if textVisible}
 					<span
 						class={`underline underline-offset-4 decoration-${words[index].color}`}
-						transition:typewriter={{speed: speed}}
+						transition:typewriter={{ speed: speed }}
 						on:introend={backspace}
 						on:outroend={next}>{words[index].text}</span
 					>

@@ -1,13 +1,13 @@
 <script>
 	import { scrollRef } from 'svelte-scrolling';
 	export const id = 'connect';
-	
+
 	import TextInput from '$lib/components/base/textInput.svelte';
-		
+
 	export let title = '';
 	export let text = '';
 	export let action = { text: 'start', primary: true, round: true, to: '/' };
-	
+
 	let value = '';
 </script>
 

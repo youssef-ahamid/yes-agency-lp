@@ -16,7 +16,7 @@
 			<div class="-ml-6 md:-ml-10">
 				<Button underlined tertiary to="/projects">/projects/</Button>
 			</div>
-			<h1 class="mb-4 md:mb-6">{project.title}</h1>
+			<h1 class="my-4 md:my-6">{project.title}</h1>
 			<div class="my-4">
 				{#each project.tags as tag}
 					<Tag {...tag} />
