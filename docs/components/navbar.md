@@ -16,14 +16,15 @@ Navbars provide clickable elements which can be used to route to other pages/sec
 <br/>
 
 ## props
+
 The data that can be passed down to buttons in order to manipulate its behavior
 
 <br/>
 
 ### appearance
 
-
 #### `color`
+
 The color to show buttons and other elements
 
 Type: <strong>String</strong>
@@ -41,11 +42,12 @@ options:
 <br/>
 
 ## assets
+
 Files/data referenced in Navbar
 
 <br/>
 
 - #### [`Logo.svg`](https://github.com/Yes-Marketing/landing/blob/master/public/images/logo.svg)
-Logo image file
+  Logo image file
 
 <br/>

@@ -4,9 +4,7 @@
   <img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-yellow.svg" target="_blank" />
 </a>
 
-
 The digital home of one of the biggest marketing agencies in Egypt
-
 
 ## Install Website Locally
 
@@ -47,5 +45,6 @@ npm run build
 ## Docs
 
 ### Components
+
 - [`Button`](https://github.com/Yes-Marketing/landing/blob/master/docs/components/Button.md)
 - [`Navbar`](https://github.com/Yes-Marketing/landing/blob/master/docs/components/navbar.md)
