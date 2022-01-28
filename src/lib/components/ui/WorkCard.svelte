@@ -1,3 +1,5 @@
+<svelte:options immutable={true} />
+
 <script>
 	import Button from '$lib/components/base/Button.svelte';
 	import Tag from '$lib/components/base/Tag.svelte';
@@ -18,7 +20,7 @@
 </script>
 
 <div
-	class="w-80 rounded-3xl p-5 md:w-96 bg-{clr.bg} mx-2 my-4 inline-block cursor-crosshair transition duration-300 ease-out md:mx-7 md:my-8"
+	class="w-80 rounded-3xl p-5 md:w-96 bg-{clr.bg} shadow hover:shadow-2xl hover:shadow-{clr.bg}/20 mx-2 my-4 inline-block cursor-crosshair transition duration-300 ease-out md:mx-4 md:my-8"
 	on:mouseenter={() => (hover = true)}
 	on:mouseleave={() => (hover = false)}
 >
