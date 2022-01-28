@@ -1,16 +1,16 @@
 <script>
 	import Button from '$lib/components/base/Button.svelte';
 	import { onMount } from 'svelte';
-	
+
 	import ColorThief from '../../../../node_modules/colorthief/dist/color-thief.mjs';
 	const colorThief = new ColorThief();
-	
+
 	let colorRefresh;
 	let RGB, image;
-	
+
 	let blur = false;
 	let set = false;
-	
+
 	export let src, action;
 	export let preset = false;
 

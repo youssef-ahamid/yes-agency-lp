@@ -69,7 +69,7 @@
 			class:text-green={green && ghost}
 			class:text-purple={purple && ghost}
 			class:group-hover:text-primary={(underlined && primary) || ghost}
-			class:group-hover:text-secondary={(underlined && secondary) || round}
+			class:group-hover:text-secondary={(underlined && secondary) || round || (ghost && secondary)}
 			class:group-hover:text-tertiary={underlined && tertiary}
 			class:group-hover:text-blue={underlined && blue}
 			class:group-hover:text-orange={underlined && orange}
@@ -102,6 +102,8 @@
 
 			<div
 				class="absolute -top-1 h-1 w-full scale-x-0 rounded-full bg-primary shadow-lg shadow-primary transition duration-300 ease-out group-hover:scale-x-100"
+				class:bg-secondary={secondary}
+				class:bg-primary={!secondary}
 			/>
 		</div>
 	{/if}
