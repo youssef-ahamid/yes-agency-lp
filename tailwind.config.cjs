@@ -10,7 +10,10 @@ module.exports = {
 				},
 				tertiary: '#FCDC4D',
 				green: '#00A676',
-				blue: '#226CE0',
+				blue: {
+					DEFAULT: '#226CE0',
+					dark: '#094074'
+				},
 				purple: '#C455A8',
 				orange: '#FC5130'
 			},
