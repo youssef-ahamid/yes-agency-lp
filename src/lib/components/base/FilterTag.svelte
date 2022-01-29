@@ -10,7 +10,9 @@
 </script>
 
 <button
-	class="group my-2 mr-3 inline-block cursor-pointer rounded-full px-6 py-2 transition duration-300 ease-out focus:ring-4 focus:ring-current focus:ring-offset-1 md:mr-5 md:px-10 md:py-3 hover:bg-{color} text-{color} focus:bg-{color} {active? `bg-${color}`:'bg-secondary-light'}"
+	class="group my-2 mr-3 inline-block cursor-pointer rounded-full px-6 py-2 transition duration-300 ease-out focus:ring-4 focus:ring-current focus:ring-offset-1 md:mr-5 md:px-10 md:py-3 hover:bg-{color} text-{color} focus:bg-{color} {active
+		? `bg-${color}`
+		: 'bg-secondary-light'}"
 	on:click={select}
 >
 	<h5
