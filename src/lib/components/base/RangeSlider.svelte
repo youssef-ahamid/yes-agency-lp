@@ -11,7 +11,7 @@
 	$: roundedValue = Math.ceil(value / step) * step;
 </script>
 
-<div class="relative mx-4 my-5 w-80 max-w-lg md:w-96 lg:w-full">
+<div class="relative my-5 w-full max-w-[20rem] md:w-96 md:max-w-lg lg:w-full">
 	<div class="my-5 flex">
 		{#key value}
 			{#if money}
@@ -39,10 +39,13 @@
 	<div class="my-12 flex w-full justify-between">
 		{#if money}
 			<h6 class="font-thin" use:monetize={['truncate']}>{min}</h6>
-			<h6 class="font-thin" use:monetize={['truncate']}>{max}</h6>
+			<div class="flex">
+				<h6 class="font-thin" use:monetize={['truncate']}>{max}</h6>
+				<h6 class="font-thin">{beyond ? '+' : ''}</h6>
+			</div>
 		{:else}
 			<h6 class="font-thin">{min}</h6>
-			<h6 class="font-thin">{max}</h6>
+			<h6 class="font-thin">{max}{beyond ? '+' : ''}</h6>
 		{/if}
 	</div>
 </div>
