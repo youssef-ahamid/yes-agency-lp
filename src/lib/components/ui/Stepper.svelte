@@ -17,13 +17,13 @@
 		else
 			currentStep = {
 				num: steps.length + 1,
-				component: success
+				...success
 			};
 	}
 
 	let nextAllowed = true;
 
-	$: completed = currentStep.num == steps.length + 1;
+	$: completed = currentStep.num >= steps.length + 1;
 	$: progress = ((currentStep.num - 1) / (steps.length - 1)) * 100;
 	$: progress = progress > 100 ? 100 : progress; // limit scaling to prevent going past 100% @ success
 </script>
@@ -42,8 +42,9 @@
 					on:click={() => (allowNav ? (currentStep = step) : '')}
 				>
 					<h4
-						class="-rotate-45 transform transition  duration-300 ease-out {step.num <
-						currentStep.num
+						class="-rotate-45 transform transition  duration-300 ease-out {currentStep == step
+							? 'text-opacity-100'
+							: ''} {step.num < currentStep.num
 							? `text-secondary ${allowNav ? 'group-hover:text-opacity-75' : ''}`
 							: `text-primary text-opacity-50 ${allowNav ? 'group-hover:text-opacity-100' : ''}`}"
 					>
@@ -65,7 +66,7 @@
 				style="transform: scaleY({progress}%)"
 			/>
 		</div>
-		<div class:w-full={nextAllowed}>
+		<div class="w-full">
 			{#each steps as step}
 				{#if step == currentStep}
 					<div
@@ -75,7 +76,7 @@
 						on:outroend={() => (nextAllowed = true)}
 					>
 						{#if nextAllowed}
-							<svelte:component this={step.component} />
+							<svelte:component this={step.component} {...step.props} />
 						{/if}
 					</div>
 				{/if}
@@ -88,31 +89,31 @@
 					on:outroend={() => (nextAllowed = true)}
 				>
 					{#if nextAllowed}
-						<svelte:component this={currentStep.component} />
+						<svelte:component this={currentStep.component} {...currentStep.props} />
 					{/if}
 				</div>
 			{/if}
 		</div>
 	</div>
 	{#if !completed}
-	<div
-		transition:fade={{ duration: 200 }}
-		class="flex w-full items-end {currentStep.num > 1 || !nextAllowed
-			? 'justify-between'
-			: 'justify-end'} mt-12"
-	>
-		{#if currentStep.num > 1}
-			<div transition:fly={{ y: 20, duration: 200 }}>
-				<Button ghost primary on:click={back}>back</Button>
-			</div>
-		{/if}
-		{#if nextAllowed}
-			<div transition:fly={{ y: 20, duration: 200 }}>
-				<Button underlined primary on:click={next}
-					>{currentStep.num == steps.length ? 'submit!' : 'next'}</Button
-				>
-			</div>
-		{/if}
-	</div>
+		<div
+			transition:fade={{ duration: 200 }}
+			class="flex w-full items-end {currentStep.num > 1 || !nextAllowed
+				? 'justify-between'
+				: 'justify-end'} mt-12"
+		>
+			{#if currentStep.num > 1}
+				<div transition:fly={{ y: 20, duration: 300 }}>
+					<Button ghost primary on:click={back}>back</Button>
+				</div>
+			{/if}
+			{#if nextAllowed}
+				<div transition:fly={{ y: 20, duration: 300 }}>
+					<Button underlined primary on:click={next}
+						>{currentStep.num == steps.length ? 'submit!' : 'next'}</Button
+					>
+				</div>
+			{/if}
+		</div>
 	{/if}
 </Modal>
