@@ -22,6 +22,7 @@
 			class:md:text-5xl={big}
 			class:md:text-2xl={!big}
 			class:w-44={!big}
+			class:md:w-64={!big}
 		/>
 		{#if action}
 			<Button {...action} />
