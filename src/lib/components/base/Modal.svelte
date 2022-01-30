@@ -9,11 +9,17 @@
 		transition:fade={{ duration: 300 }}
 	>
 		<div
-			class="w-full max-w-6xl rounded-3xl bg-secondary-light p-12 text-primary transition duration-300 ease-out md:rounded-[50px] md:p-20"
-			style="filter: drop-shadow(0 25px 25px rgb(36 35 49 / 0.15))"
+			class="max-h-fit w-full max-w-6xl flex-1 overflow-hidden rounded-3xl bg-secondary-light p-12 text-primary md:rounded-[50px] md:p-20"
+			id="modal"
 			transition:fly={{ duration: 300, y: 50, delay: 200 }}
 		>
 			<slot />
 		</div>
 	</div>
 {/if}
+
+<style>
+	#modal {
+		filter: drop-shadow(0 25px 25px rgb(36 35 49 / 0.15));
+	}
+</style>
