@@ -24,7 +24,7 @@
 
 		<h4 class="w-full">{title}</h4>
 		<h6 class="max-w-3xl py-4 font-thin">{subtitle}</h6>
-		<div class="md:w-34 flex w-full flex-wrap justify-around">
+		<div class="mt-6 flex w-full flex-wrap justify-around">
 			{#each actions as action}
 				<Button {...action} />
 			{/each}
