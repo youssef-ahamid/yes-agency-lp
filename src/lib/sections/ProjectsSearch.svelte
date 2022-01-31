@@ -33,21 +33,28 @@
 
 <section class="mx-auto mb-12 flex max-w-7xl flex-wrap justify-center px-4 py-8" use:scrollRef={id}>
 	<h1 class="mb-12 w-full text-left md:mb-24">{title}</h1>
-	<div class="flex w-full flex-wrap justify-around">
+	<div
+		class="flex w-full snap-x snap-mandatory items-center overflow-x-scroll md:flex-wrap md:justify-around"
+	>
 		{#each filters as tag}
-			<FilterTag
-				{...tag}
-				on:select={(e) => (appliedFilter = e.detail)}
-				active={appliedFilter == tag.text}
-			/>
+			<div class="min-w-fit snap-start snap-always scroll-ml-4">
+				<FilterTag
+					{...tag}
+					on:select={(e) => (appliedFilter = e.detail)}
+					active={appliedFilter == tag.text}
+				/>
+			</div>
 		{/each}
 	</div>
-	<div class="my-8 flex w-full flex-wrap justify-center">
+	<div
+		class="my-8 flex min-h-[24rem] w-full snap-x snap-mandatory items-center overflow-x-scroll md:flex-wrap md:justify-center"
+	>
 		{#each filteredProjects as project, i (project)}
 			<div
-				animate:flip={{ duration: 500, delay: 100 }}
-				in:fly={{ y: 50, duration: 500, delay: 300 }}
-				out:fade={{ duration: 200 }}
+				animate:flip={{ duration: 500, delay: 250 }}
+				in:fly={{ y: 50, duration: 400, delay: 450 }}
+				out:fly={{ y: -20, duration: 200 }}
+				class="snap-center snap-always"
 			>
 				<WorkCard tags={project.tags} max_tags={2} slug={project.slug}>
 					<img
