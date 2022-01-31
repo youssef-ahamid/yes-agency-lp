@@ -64,75 +64,75 @@
 	</div>
 </div>
 <div
-	class="fixed inset-0 z-[900] min-h-screen w-full transform bg-secondary bg-opacity-0 transition duration-300 ease-out lg:hidden"
-	class:bg-opacity-50={showNav}
+	class="fixed right-6 top-7 z-[950] flex w-20 flex-wrap justify-end lg:hidden"
+	on:click|self={toggleNav}
 >
 	<div
-		class="fixed right-6 top-7 z-[950] flex w-20 flex-wrap justify-end lg:hidden"
-		on:click|self={toggleNav}
-	>
-		<div
-			class="mb-1.5 h-1 w-16 rounded-full transition duration-300 ease-out"
-			class:bg-primary={color == 'primary'}
-			class:bg-secondary={color == 'secondary'}
-			class:bg-tertiary={color == 'tertiary'}
-			class:bg-blue={color == 'blue'}
-			class:bg-orange={color == 'orange'}
-			class:bg-green={color == 'green'}
-			class:bg-purple={color == 'purple'}
-			class:transform={showNav}
-			class:translate-y-4={showNav}
-		/>
-		<div
-			class="my-1.5 h-1 w-10 rounded-full bg-primary transition duration-300 ease-out"
-			class:transform={showNav}
-			class:scale-x-150={showNav}
-			class:-translate-x-2={showNav}
-		/>
-		<div
-			class="my-1.5 h-1 w-16 rounded-full bg-primary transition duration-300 ease-out"
-			class:transform={showNav}
-			class:-translate-y-4={showNav}
-		/>
-	</div>
+		class="mb-1.5 h-1 w-16 rounded-full transition duration-300 ease-out"
+		class:bg-primary={color == 'primary'}
+		class:bg-secondary={color == 'secondary'}
+		class:bg-tertiary={color == 'tertiary'}
+		class:bg-blue={color == 'blue'}
+		class:bg-orange={color == 'orange'}
+		class:bg-green={color == 'green'}
+		class:bg-purple={color == 'purple'}
+		class:transform={showNav}
+		class:translate-y-4={showNav}
+	/>
 	<div
-		class="z-[999] min-h-screen w-72 transform bg-secondary py-4 shadow shadow-primary/50 ring-primary transition duration-500 ease-out lg:hidden"
-		class:shadow-2xl={showNav}
-		class:-translate-x-full={!showNav}
-		class:translate-x-0={showNav}
-		class:ring-2={showNav}
-		use:clickOutside
-		on:outclick={() => (showNav ? (showNav = false) : '')}
-	>
-		<img src="/images/logo.svg" alt="logo" class="h-auto w-32 p-6" />
-		<div class="my-20">
-			<Button ghost primary to="/about">our work</Button>
-			<Button ghost primary to="/about">what we do</Button>
-		</div>
-		<div class="absolute bottom-10 flex flex-wrap justify-center">
-			<Button
-				underlined
-				linkWithin
-				primary={color == 'primary'}
-				secondary={color == 'secondary'}
-				tertiary={color == 'tertiary'}
-				blue={color == 'blue'}
-				orange={color == 'orange'}
-				green={color == 'green'}
-				purple={color == 'purple'}
-				to="connect">collaborate</Button
-			>
-			<Button
-				round
-				primary={color == 'primary'}
-				secondary={color == 'secondary'}
-				tertiary={color == 'tertiary'}
-				blue={color == 'blue'}
-				orange={color == 'orange'}
-				green={color == 'green'}
-				purple={color == 'purple'}
-				to="tel:+201200525233">CALL</Button
-			>
-		</div>
+		class="my-1.5 h-1 w-10 rounded-full bg-primary transition duration-300 ease-out"
+		class:transform={showNav}
+		class:scale-x-150={showNav}
+		class:-translate-x-2={showNav}
+	/>
+	<div
+		class="my-1.5 h-1 w-16 rounded-full bg-primary transition duration-300 ease-out"
+		class:transform={showNav}
+		class:-translate-y-4={showNav}
+	/>
+</div>
+<div
+	class="fixed inset-0 {showNav
+		? 'z-[900] bg-opacity-50'
+		: '-z-10 bg-opacity-0'} min-h-screen w-full transform bg-secondary transition duration-300 ease-out lg:hidden"
+/>
+<div
+	class="fixed top-0 left-0 z-[999] min-h-screen w-72 transform bg-secondary py-4 shadow shadow-primary/50 ring-primary transition duration-500 ease-out lg:hidden"
+	class:shadow-2xl={showNav}
+	class:-translate-x-full={!showNav}
+	class:translate-x-0={showNav}
+	class:ring-2={showNav}
+	use:clickOutside
+	on:outclick={() => (showNav ? (showNav = false) : '')}
+>
+	<img src="/images/logo.svg" alt="logo" class="h-auto w-32 p-6" />
+	<div class="my-20">
+		<Button ghost primary to="/about">our work</Button>
+		<Button ghost primary to="/about">what we do</Button>
+	</div>
+	<div class="absolute bottom-10 flex flex-wrap justify-center">
+		<Button
+			underlined
+			linkWithin
+			primary={color == 'primary'}
+			secondary={color == 'secondary'}
+			tertiary={color == 'tertiary'}
+			blue={color == 'blue'}
+			orange={color == 'orange'}
+			green={color == 'green'}
+			purple={color == 'purple'}
+			to="connect">collaborate</Button
+		>
+		<Button
+			round
+			primary={color == 'primary'}
+			secondary={color == 'secondary'}
+			tertiary={color == 'tertiary'}
+			blue={color == 'blue'}
+			orange={color == 'orange'}
+			green={color == 'green'}
+			purple={color == 'purple'}
+			to="tel:+201200525233">CALL</Button
+		>
 	</div>
 </div>
