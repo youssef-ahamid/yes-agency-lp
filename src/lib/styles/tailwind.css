@@ -47,6 +47,6 @@
 	}
 
 	html {
-		@apply scroll-smooth bg-secondary;
+		@apply scroll-smooth bg-secondary scrollbar-hide;
 	}
 }
