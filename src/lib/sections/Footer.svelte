@@ -7,7 +7,7 @@
 <div class="mt-20 w-full border-t-2 border-primary p-6 md:mt-80">
 	<div class="mx-auto flex max-w-7xl flex-wrap items-center justify-between p-2 md:flex-nowrap">
 		<Goes to="/">
-			<img src="images/logo.svg" alt="logo" class="h-auto w-28 py-4 md:w-40" />
+			<img src="/images/logo.svg" alt="logo" class="h-auto w-28 py-4 md:w-40" />
 		</Goes>
 		<div class="flex w-full max-w-xl flex-wrap justify-between md:px-2">
 			<div class="my-4 w-32 md:mx-2 md:w-44">

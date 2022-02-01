@@ -1,7 +1,7 @@
 <script>
 	import { scrollTo } from 'svelte-scrolling';
 
-	export let to;
+	export let to = '';
 	export let linkWithin = false;
 	export let round = false;
 	export let ghost = false;
@@ -17,7 +17,7 @@
 	export let text = false;
 </script>
 
-{#if !to}
+{#if to.length == 0}
 	<button
 		on:click|preventDefault
 		class="group flex flex-wrap items-center rounded-full transition duration-300 ease-out hover:shadow-primary/20 focus:ring-2 focus:ring-current focus:ring-offset-2"
