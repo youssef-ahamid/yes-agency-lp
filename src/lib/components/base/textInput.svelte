@@ -1,4 +1,6 @@
 <script>
+	import { createEventDispatcher } from 'svelte';
+
 	import Button from './Button.svelte';
 
 	export let value, placeholder;
@@ -6,6 +8,12 @@
 	export let big = false;
 	export let action = false;
 	export let context = '';
+
+	const dispatch = createEventDispatcher();
+
+	function submit() {
+		dispatch('submit', value);
+	}
 
 	$: value = trim ? value.trim() : value; // remove whitespace
 </script>
@@ -25,7 +33,7 @@
 			class:md:w-64={!big}
 		/>
 		{#if action}
-			<Button {...action} />
+			<Button {...action} on:click={submit} />
 		{/if}
 		<div
 			class="absolute top-[100%] my-1 h-1 w-full origin-left scale-x-0 transform rounded-full bg-primary bg-opacity-75 transition duration-200 ease-out peer-focus:scale-x-100 md:my-2"
