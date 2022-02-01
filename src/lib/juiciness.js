@@ -16,3 +16,15 @@ export function typewriter(node, { speed = 1 }) {
 		}
 	};
 }
+
+import { elasticOut } from 'svelte/easing';
+export function flash(node, { duration = 500 }) {
+	const o = +getComputedStyle(node).opacity;
+	return {
+		duration,
+		css(t) {
+			let eased = elasticOut(t);
+			return `opacity: ${eased * o}`;
+		}
+	};
+}
