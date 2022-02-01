@@ -15,7 +15,8 @@ module.exports = {
 					dark: '#094074'
 				},
 				purple: '#C455A8',
-				orange: '#FC5130'
+				orange: '#FC5130',
+				disabled: 'rgb(115 115 115)'
 			},
 			fontFamily: {
 				slab: 'Montagu Slab, serif',
