@@ -1,10 +1,13 @@
+<svelte:options accessors />
+
 <script>
+	import { onMount } from 'svelte';
 	import { fly, fade } from 'svelte/transition';
 	import Modal from '$lib/components/base/Modal.svelte';
 	import Button from '../base/Button.svelte';
 
 	export let steps, success;
-	export let currentStep = steps[0];
+	export let currentStep = {};
 	export let open = false;
 	export let allowNav = true;
 
@@ -25,10 +28,11 @@
 
 	$: completed = currentStep.num >= steps.length + 1;
 	$: progress = ((currentStep.num - 1) / (steps.length - 1)) * 100;
-	$: progress = progress > 100 ? 100 : progress; // limit scaling to prevent going past 100% @ success
+	$: progress = progress ? (progress < 100 ? progress : 100) : 0; // limit scaling to prevent going past 100% @ success
+	onMount(() => (currentStep = steps[0]));
 </script>
 
-<Modal active={open}>
+<Modal bind:active={open}>
 	<div class="flex w-full items-start justify-start md:flex-col">
 		<div class="relative my-12 mr-8 flex flex-col justify-between md:mr-0 md:w-full md:flex-row">
 			{#each steps as step}
@@ -56,14 +60,22 @@
 				class="absolute top-1/2 -z-50 hidden h-3 w-full -translate-y-1/2 transform bg-secondary md:block"
 			/>
 			<div
-				class="absolute top-1/2 -z-40 -mt-1.5 hidden h-3 w-full origin-left -translate-y-1/2 transform bg-primary transition delay-300 duration-200 ease-out md:block"
-				style="transform: scaleX({progress}%)"
+				class="absolute top-1/2 -z-40 hidden h-3 w-full origin-left -translate-y-1/2 transform bg-primary transition delay-300 duration-200 ease-out md:block"
+				class:scale-x-25={progress == 25}
+				class:scale-x-50={progress == 50}
+				class:scale-x-75={progress == 75}
+				class:scale-x-100={progress == 100}
+				class:scale-x-0={progress == 0}
 			/>
 
 			<div class="absolute left-[20px] -z-50 h-3/4 w-2 bg-secondary md:hidden" />
 			<div
-				class="absolute left-[20px] -z-40 -mt-1.5 h-3/4 w-2 origin-top transform bg-primary transition duration-200 ease-out md:hidden md:delay-300"
-				style="transform: scaleY({progress}%)"
+				class="absolute left-[20px] -z-40 h-3/4 w-2 origin-top transform bg-primary transition duration-200 ease-out md:hidden"
+				class:scale-y-25={progress == 25}
+				class:scale-y-50={progress == 50}
+				class:scale-y-75={progress == 75}
+				class:scale-y-100={progress == 100}
+				class:scale-y-0={progress == 0}
 			/>
 		</div>
 		<div class="w-full">
