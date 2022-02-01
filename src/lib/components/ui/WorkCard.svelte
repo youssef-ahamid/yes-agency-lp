@@ -5,7 +5,7 @@
 	import Tag from '$lib/components/base/Tag.svelte';
 
 	export let tags = [];
-	export let slug;
+	export let slug = '';
 	export let max_tags = 3;
 	export let color =
 		tags.length == 1 || (max_tags == 1 && tags.length > 1) ? tags[0].color : 'primary';

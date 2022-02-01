@@ -11,7 +11,7 @@
 </script>
 
 <section use:scrollRef={id}>
-	<Hero>
+	<Hero long>
 		<div class="max-w-3xl p-4">
 			<div class="-ml-6 md:-ml-10">
 				<Button underlined tertiary to="/projects">/projects/</Button>
