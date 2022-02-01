@@ -47,6 +47,6 @@
 	}
 
 	html {
-		@apply bg-secondary;
+		@apply scroll-smooth bg-secondary;
 	}
 }
