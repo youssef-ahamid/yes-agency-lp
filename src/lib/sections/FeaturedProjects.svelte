@@ -75,13 +75,13 @@
 		<h1 class="mx-6">{title}</h1>
 		{#each projects as project (project)}
 			<div
-				class="flex flex-col-reverse px-4 md:block"
+				class="flex flex-col-reverse px-8 md:block"
 				animate:flip={{ duration: 200 }}
 				on:scroll
 				on:click={() => (active = project)}
 			>
 				{#if project == active || !mobile}
-					<div in:fly={{ x: 40, duration: 300, delay: 400 }} out:fade={{ duration: 100 }}>
+					<div in:fly={{ y: 20, duration: 300, delay: 500 }} out:fade={{ duration: 100 }}>
 						<ProjectTab slug={project.slug}>
 							<span
 								class="transition duration-300 ease-out"
@@ -108,7 +108,7 @@
 				<div class="md:absolute md:right-5 md:top-1/2 md:-translate-y-1/2">
 					{#if project == active}
 						<div
-							in:fly={{ x: 50, duration: 300, delay: 200 }}
+							in:fly={{ y: -20, duration: 300, delay: 200 }}
 							out:fade={{ duration: 150 }}
 							class="my-8"
 						>
@@ -121,6 +121,6 @@
 	</div>
 </section>
 
-<div class="mb-20 flex w-full justify-center">
+<div class="mb-20 flex w-full justify-center md:mb-40">
 	<Button tertiary round to="/projects">All Projects</Button>
 </div>

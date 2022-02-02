@@ -1,5 +1,5 @@
 <script>
-	export let services;
+	export let services = [];
 	import Button from '$lib/components/base/Button.svelte';
 	import Service from '$lib/components/ui/Service.svelte';
 </script>

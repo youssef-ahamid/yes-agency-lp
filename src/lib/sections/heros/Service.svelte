@@ -10,7 +10,7 @@
 </script>
 
 <section use:scrollRef={id}>
-	<Hero long>
+	<Hero>
 		<div class="max-w-3xl p-4">
 			<div class="-ml-6 md:-ml-10">
 				<Button {...service.action} linkWithin={false} underlined text="" to="/services"

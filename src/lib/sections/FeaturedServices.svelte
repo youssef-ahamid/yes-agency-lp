@@ -3,5 +3,5 @@
 	export let services;
 </script>
 
-<h1 class="my-14 text-center">What We Do</h1>
+<h1 class="mt-14 text-center md:mt-36">What We Do</h1>
 <ServiceList {services} />
