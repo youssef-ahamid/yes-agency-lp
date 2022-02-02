@@ -50,3 +50,17 @@
 		@apply scroll-smooth bg-secondary scrollbar-hide;
 	}
 }
+
+@layer utilities {
+	.drawme {
+		stroke-dasharray: 1000;
+		stroke-dashoffset: 1000;
+		animation: dash 1s linear forwards;
+	}
+
+	@keyframes dash {
+		to {
+			stroke-dashoffset: 0;
+		}
+	}
+}

@@ -2,6 +2,15 @@ module.exports = {
 	content: ['./src/**/*.svelte'],
 	theme: {
 		extend: {
+			keyframes: {
+				draw: {
+					'0%': { strokeDasharray: '1000', strokeDashoffset: '1000' },
+					'100%': { strokeDashoffset: '0' }
+				}
+			},
+			animation: {
+				draw: 'draw 4s ease-in-out forwards'
+			},
 			colors: {
 				primary: '#EDF7F6',
 				secondary: {
@@ -24,5 +33,5 @@ module.exports = {
 			}
 		}
 	},
-	plugins: [require('tailwind-scrollbar-hide')]
+	plugins: [require('tailwindcss-animation-delay'), require('tailwind-scrollbar-hide')]
 };
