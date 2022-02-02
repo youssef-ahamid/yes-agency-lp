@@ -51,7 +51,7 @@
 			tertiary={!hover}
 			secondary={hover && (clr.bg == 'tertiary' || clr.bg == 'primary')}
 			primary={hover && !(clr.bg == 'tertiary' || clr.bg == 'primary')}
-			to="projects/{slug}">case study</Button
+			to="/projects/{slug}">case study</Button
 		>
 	</div>
 </div>
