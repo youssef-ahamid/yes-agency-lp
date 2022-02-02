@@ -9,7 +9,7 @@
 </script>
 
 <div
-	class="fixed inset-x-0 top-0 mx-auto mb-4 flex h-24 w-full items-center justify-between bg-secondary p-6 sm:justify-evenly md:p-12 lg:relative lg:top-8 lg:mb-12 lg:bg-none"
+	class="fixed inset-x-0 top-0 mx-auto mb-4 flex h-24 w-full items-center justify-between bg-secondary p-6 sm:max-w-7xl sm:justify-between md:p-0 lg:relative lg:top-8 lg:mb-12 lg:bg-none"
 	style="z-index: 800!important;"
 >
 	<a href="/">
