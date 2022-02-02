@@ -23,18 +23,10 @@
 				{/each}
 			</div>
 			<p>{project.abstract}</p>
-			<p class="my-12 text-opacity-50">{project.dates}</p>
+			<p class="my-12 capitalize text-opacity-50">{project.dates}</p>
 		</div>
 		<div>
-			<ImageCard
-				src={project.client.logo}
-				action={{
-					text: 'client profile',
-					primary: true,
-					underlined: true,
-					to: `/clients/${project.client.slug}`
-				}}
-			/>
+			<ImageCard src={project.client.logo} />
 		</div>
 	</Hero>
 </section>
