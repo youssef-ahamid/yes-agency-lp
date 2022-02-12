@@ -1,8 +1,5 @@
 <script>
-	import { scrollTo } from 'svelte-scrolling';
-
 	export let to = '';
-	export let linkWithin = false;
 	export let round = false;
 	export let ghost = false;
 	export let underlined = false;
@@ -14,7 +11,7 @@
 	export let secondary = false;
 	export let tertiary = false;
 	export let icon = false;
-	export let text = false;
+	export let text;
 </script>
 
 {#if to.length == 0}
@@ -104,54 +101,29 @@
 		class:text-green={green}
 		class:text-purple={purple}
 	>
-		{#if linkWithin}
-			<a
-				href={to}
-				use:scrollTo={to}
-				class:text-secondary={(tertiary && round) || (primary && round) || (secondary && ghost)}
-				class:text-tertiary={tertiary && ghost}
-				class:text-blue={blue && ghost}
-				class:text-orange={orange && ghost}
-				class:text-green={green && ghost}
-				class:text-purple={purple && ghost}
-				class:group-hover:text-primary={(underlined && primary) || ghost}
-				class:group-hover:text-secondary={(underlined && secondary) || round}
-				class:group-hover:text-tertiary={underlined && tertiary}
-				class:group-hover:text-blue={underlined && blue}
-				class:group-hover:text-orange={underlined && orange}
-				class:group-hover:text-green={underlined && green}
-				class:group-hover:text-purple={underlined && purple}
-				class="focus-visble:outline-primary py-2 px-6 transition duration-300 ease-out focus-visible:scale-x-[110%] md:py-4 md:px-10"
-			>
-				{#if text}
-					{text}
-				{/if}<slot /></a
-			>
-		{:else}
-			<a
-				href={to}
-				class:text-secondary={(tertiary && round) || (primary && round) || (secondary && ghost)}
-				class:text-tertiary={tertiary && ghost}
-				class:text-blue={blue && ghost}
-				class:text-orange={orange && ghost}
-				class:text-green={green && ghost}
-				class:text-purple={purple && ghost}
-				class:group-hover:text-primary={(underlined && primary) || ghost}
-				class:group-hover:text-secondary={(underlined && secondary) ||
-					round ||
-					(ghost && secondary)}
-				class:group-hover:text-tertiary={underlined && tertiary}
-				class:group-hover:text-blue={underlined && blue}
-				class:group-hover:text-orange={underlined && orange}
-				class:group-hover:text-green={underlined && green}
-				class:group-hover:text-purple={underlined && purple}
-				class="focus-visble:outline-primary transition duration-300 ease-out focus-visible:scale-x-[110%] py-2 px-6 md:py-4 md:px-10"
-			>
-				{#if text}
-					{text}
-				{/if}<slot /></a
-			>
-		{/if}
+		<a
+			href={to}
+			class:text-secondary={(tertiary && round) || (primary && round) || (secondary && ghost)}
+			class:text-tertiary={tertiary && ghost}
+			class:text-blue={blue && ghost}
+			class:text-orange={orange && ghost}
+			class:text-green={green && ghost}
+			class:text-purple={purple && ghost}
+			class:group-hover:text-primary={(underlined && primary) || ghost}
+			class:group-hover:text-secondary={(underlined && secondary) ||
+				round ||
+				(ghost && secondary)}
+			class:group-hover:text-tertiary={underlined && tertiary}
+			class:group-hover:text-blue={underlined && blue}
+			class:group-hover:text-orange={underlined && orange}
+			class:group-hover:text-green={underlined && green}
+			class:group-hover:text-purple={underlined && purple}
+			class="focus-visble:outline-primary transition duration-300 ease-out focus-visible:scale-x-[110%] py-2 px-6 md:py-4 md:px-10"
+		>
+			{#if text}
+				{text}
+			{/if}<slot /></a
+		>
 		{#if icon}
 			<img class="ml-3 h-4 w-4 md:ml-5 md:h-6 md:w-6" src={icon} alt="icon" />
 		{/if}
