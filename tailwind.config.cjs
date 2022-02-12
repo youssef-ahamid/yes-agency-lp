@@ -29,7 +29,7 @@ module.exports = {
 			},
 			fontFamily: {
 				slab: 'Montagu Slab, serif',
-				sans: 'Sora, sans-serif'
+				sans: 'Montserrat, sans-serif'
 			}
 		}
 	},
