@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_atoms_checkboxes",
+  "info": {
+    "displayName": "checkbox",
+    "icon": "check-square",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "color": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::color.color"
+    },
+    "preselect": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

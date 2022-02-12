@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_atoms_buttons",
+  "info": {
+    "displayName": "button",
+    "icon": "hand-pointer",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "to": {
+      "type": "string"
+    },
+    "color": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::color.color"
+    },
+    "shape": {
+      "type": "enumeration",
+      "enum": [
+        "round",
+        "underlined",
+        "ghost"
+      ],
+      "required": true
+    }
+  }
+}
