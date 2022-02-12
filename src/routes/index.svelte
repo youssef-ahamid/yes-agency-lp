@@ -319,6 +319,3 @@
 	</svg>
 {/if}
 
-<div
-	class="bg-disabled decoration-blue decoration-purple decoration-orange decoration-green decoration-primary decoration-secondary decoration-tertiary ring-orange ring-green ring-purple ring-blue ring-tertiary ring-secondary ring-primary checked:bg-orange checked:bg-blue checked:bg-purple checked:bg-green checked:bg-tertiary checked:bg-secondary hover:bg-orange hover:bg-blue hover:bg-purple hover:bg-green hover:bg-tertiary hover:bg-secondary hover:text-disabled hover:shadow-primary/20 hover:shadow-orange/20 hover:shadow-blue/20 hover:shadow-tertiary/20 hover:shadow-secondary/20 hover:shadow-green/20 hover:shadow-purple/20 hover:ring-disabled hover:ring-orange hover:ring-blue hover:ring-secondary hover:ring-primary hover:ring-blue hover:ring-tertiary hover:ring-secondary hover:ring-green hover:ring-purple focus:border-orange focus:border-blue focus:border-tertiary focus:border-secondary focus:border-green focus:border-purple"
-/>

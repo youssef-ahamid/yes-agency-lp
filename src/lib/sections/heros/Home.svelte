@@ -1,5 +1,4 @@
 <script>
-	import { scrollRef } from 'svelte-scrolling';
 	export const id = 'home';
 
 	import { onMount } from 'svelte';
@@ -42,7 +41,7 @@
 	onMount(() => setup());
 </script>
 
-<section use:scrollRef={id}>
+<section {id}>
 	<Navbar color={words[index].color} />
 	<Hero long>
 		<div class="max-w-3xl py-2 px-2">

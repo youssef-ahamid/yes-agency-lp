@@ -1,5 +1,4 @@
 <script>
-	import { scrollRef } from 'svelte-scrolling';
 	export const id = 'project-search';
 
 	import { fade, fly } from 'svelte/transition';
@@ -31,7 +30,7 @@
 	$: filteredProjects = filterProjects(appliedFilter);
 </script>
 
-<section class="mx-auto mb-12 flex max-w-7xl flex-wrap justify-center px-4 py-8" use:scrollRef={id}>
+<section class="mx-auto mb-12 flex max-w-7xl flex-wrap justify-center px-4 py-8" {id}>
 	<h1 class="mb-12 w-full text-left md:mb-24">{title}</h1>
 	<div
 		class="flex w-full snap-x snap-mandatory items-center overflow-x-scroll md:flex-wrap md:justify-around"

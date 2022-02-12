@@ -1,5 +1,4 @@
 <script>
-	import { scrollRef } from 'svelte-scrolling';
 	export const id = 'service-projects';
 
 	import WorkCard from '$lib/components/ui/WorkCard.svelte';
@@ -11,7 +10,7 @@
 	export let projects;
 </script>
 
-<section class="mx-auto flex max-w-7xl flex-wrap justify-center" use:scrollRef={id}>
+<section class="mx-auto flex max-w-7xl flex-wrap justify-center" {id}>
 	<h2 class="my-6 w-full text-center">
 		Past <span
 			class="underline-offset-6 underline decoration-{service.color} decoration-6 capitalize"

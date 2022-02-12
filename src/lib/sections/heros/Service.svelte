@@ -1,5 +1,4 @@
 <script>
-	import { scrollRef } from 'svelte-scrolling';
 	export const id = 'service-abstract';
 
 	import Button from '$lib/components/base/Button.svelte';
@@ -9,7 +8,7 @@
 	export let service;
 </script>
 
-<section use:scrollRef={id}>
+<section {id}>
 	<Hero>
 		<div class="max-w-3xl p-4">
 			<div class="-ml-6 md:-ml-10">

@@ -1,5 +1,4 @@
 <script>
-	import { scrollRef } from 'svelte-scrolling';
 	export const id = 'projects-hero';
 
 	import Hero from '$lib/components/ui/Hero.svelte';
@@ -8,7 +7,7 @@
 	export let title, subtitle, main_image, action;
 </script>
 
-<section use:scrollRef={id}>
+<section {id}>
 	<Hero>
 		<div class="max-w-3xl">
 			<h1>{title}</h1>
