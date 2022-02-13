@@ -4,7 +4,7 @@
 </script>
 
 <div
-	class="flex min-h-screen w-full items-center justify-center pt-12 lg:-mt-28"
+	class="flex min-h-screen w-full items-center justify-center pt-12 md:-mt-28"
 	class:pt-28={long}
 >
 	<div
