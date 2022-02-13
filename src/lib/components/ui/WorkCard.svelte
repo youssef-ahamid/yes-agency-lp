@@ -24,22 +24,25 @@
 </script>
 
 <div
-  class="relative w-80 rounded-3xl p-5 {!!details
+  class="relative w-80 rounded-3xl {!!details
     ? 'flex flex-nowrap flex-col md:w-[70%] md:flex-row'
-    : 'md:w-96 inline-block'} bg-{clr.bg} shadow hover:shadow-2xl hover:shadow-{clr.bg}/20 mx-2 my-4 cursor-crosshair transition duration-300 ease-out md:mx-4 md:my-8"
+    : 'md:w-96 inline-block p-5'} bg-{clr.bg} shadow hover:shadow-2xl hover:shadow-{clr.bg}/20 mx-2 my-4 cursor-crosshair transition duration-300 ease-out md:mx-4 md:my-8"
   on:mouseenter={() => (hover = true)}
   on:mouseleave={() => (hover = false)}
 >
-  <div
-    class="max-h-[70px] min-h-[40px] w-full max-w-[70%] text-{clr.text} {details
-      ? 'absolute right-2 top-4'
-      : 'my-4'} fill-current transition duration-300 ease-out"
-    class:brightness-100={!hover}
-    class:brightness-[10]={hover &&
-      !(clr.bg == "tertiary" || clr.bg == "primary")}
-    class:brightness-0={hover && (clr.bg == "tertiary" || clr.bg == "primary")}
-  >
-    <slot name="logo" />
+  <div class="relative w-full">
+    <div
+      class="max-h-[70px] min-h-[40px] w-full max-w-[70%] text-{clr.text} {!!details
+        ? 'absolute right-2 top-4'
+        : 'my-4'} fill-current transition duration-300 ease-out"
+      class:brightness-100={!hover}
+      class:brightness-[10]={hover &&
+        !(clr.bg == "tertiary" || clr.bg == "primary")}
+      class:brightness-0={hover &&
+        (clr.bg == "tertiary" || clr.bg == "primary")}
+    >
+      <slot name="logo" />
+    </div>
   </div>
   <div class="flex flex-col">
     <h4
@@ -73,19 +76,21 @@
   </div>
   <div
     class="flex flex-col w-full justify-end relative {!!details
-      ? 'py-4 bg-cover bg-center bg-norepeat rounded-br-3xl rounded-bl-3xl md:rounded-tr-3xl md:rounded-bl-none'
+      ? 'mt-4 md:mt-0 bg-cover bg-center bg-norepeat rounded-br-3xl rounded-bl-3xl md:rounded-tr-3xl md:rounded-bl-none'
       : 'py-0'}"
     style={!!details ? `background-image: url(${details.img})` : ""}
   >
-    {#if !!details}
-      <div class="w-full h-full absolute bg-gradient-to-b to-{clr.bg}" />
-    {/if}
-    <Button
-      ghost
-      tertiary={!hover}
-      secondary={hover && (clr.bg == "tertiary" || clr.bg == "primary")}
-      primary={hover && !(clr.bg == "tertiary" || clr.bg == "primary")}
-      to="/projects/{slug}">case study</Button
-    >
+  
+    <div class="w-full h-full bg-gradient-to-b to-{clr.bg} flex justify-end">
+      <Button
+        ghost
+        tertiary={!hover}
+        secondary={hover && (clr.bg == "tertiary" || clr.bg == "primary")}
+        primary={hover && !(clr.bg == "tertiary" || clr.bg == "primary")}
+        to="/projects/{slug}">case study</Button
+      >
+    </div>
   </div>
 </div>
+
+<div class="to-tertiary to-primary to-secondary to-secondary-light to-orange to-green to-purple"></div>
