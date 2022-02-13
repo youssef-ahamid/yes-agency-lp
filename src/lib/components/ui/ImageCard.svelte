@@ -44,9 +44,8 @@
 	on:mouseleave={() => (set ? '' : (blur = false))}
 >
 	<div
-		class="absolute z-0 h-full w-full transform rounded-3xl bg-gradient-to-tl {RGB & !blur? bg-opacity-100: bg-opacity-0} from-primary bg-center bg-no-repeat transition duration-300 ease-out"
+		class="absolute z-0 h-full w-full transform rounded-3xl bg-gradient-to-tl {RGB & !blur? 'bg-opacity-100': 'bg-opacity-0'} from-primary bg-center bg-no-repeat transition duration-300 ease-out"
 		class:-translate-x-12={RGB}
-		class:bg-opacity-100={RGB && !blur}
 		class:to-primary={preset == 'primary'}
 		class:to-secondary={preset == 'secondary'}
 		class:to-tertiary={preset == 'tertiary'}
