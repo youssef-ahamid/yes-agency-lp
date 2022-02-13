@@ -11,8 +11,8 @@
 
 <section {id}>
 	<Hero>
-		<div class="max-w-3xl p-4">
-			<div class="-ml-6 md:-ml-10">
+		<div class="max-w-3xl p-4relative">
+			<div class="absolute bottom-full -mt-6">
 				<Button underlined tertiary to="/projects">/projects/</Button>
 			</div>
 			<h1 class="my-4 md:my-6">{project.title}</h1>
