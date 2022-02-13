@@ -11,11 +11,11 @@
 
 <h1 class="mx-6">{title}</h1>
 {#each projects as project, i}
-<div class="w-full md:max-w-[90%] mx-auto flex {pluralize(i%2, 'flex-col-reverse', 'flex-col')}}"></div>
+<div class="w-full md:max-w-[90%] mx-auto flex {pluralize(i%2, 'justify-start', 'justify-end')}"></div>
   <div
     in:fly={{ y: 50, x: -20, duration: 400 }}
     out:fly={{ y: -20, x: 20, duration: 200 }}
-    class="snap-center snap-always"
+    class="inline-block"
   >
     <Card tags={project.tags} max_tags={2} slug={project.slug} details={{ img: project.images[0] }}>
       <img
@@ -34,3 +34,4 @@
 <div class="mb-20 flex w-full justify-center md:mb-40">
 	<Button tertiary round to="/projects">All Projects</Button>
 </div>
+<div class="justify-start justify-end"></div>
