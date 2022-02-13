@@ -11,7 +11,7 @@
 <section {id}>
 	<Hero>
 		<div class="max-w-3xl p-4 relative">
-			<div class="absolute bottom-full -mt-6">
+			<div class="absolute bottom-full -ml-6 md:-ml-10">
 				<Button {...service.action} linkWithin={false} underlined text="" to="/services"
 					>/services/</Button
 				>
