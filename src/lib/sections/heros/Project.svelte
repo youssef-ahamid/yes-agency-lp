@@ -11,11 +11,11 @@
 
 <section {id}>
 	<Hero>
-		<div class="max-w-3xl p-4relative">
+		<div class="max-w-3xl p-4 relative">
 			<div class="absolute bottom-full -ml-6 md:-ml-10">
 				<Button underlined tertiary to="/projects">/projects/</Button>
 			</div>
-			<h1 class="my-4 md:my-6">{project.title}</h1>
+			<h1>{project.title}</h1>
 			<div class="my-4">
 				{#each project.tags as tag}
 					<Tag {...tag} />

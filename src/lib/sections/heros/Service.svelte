@@ -16,7 +16,7 @@
 					>/services/</Button
 				>
 			</div>
-			<h1 class={`my-4 capitalize md:my-6 text-${service.color}`}>{service.name}</h1>
+			<h1 class={`mb-4 capitalize md:mb-6 text-${service.color}`}>{service.name}</h1>
 			<p>{service.description}</p>
 		</div>
 		<div>
