@@ -8,47 +8,47 @@
 	/* Typography */
 
 	h1 {
-		@apply font-slab text-5xl text-primary md:text-7xl;
+		@apply font-slab text-4xl text-primary md:text-6xl;
 	}
 
 	h2 {
-		@apply font-slab text-4xl font-bold text-primary md:text-5xl;
+		@apply font-slab text-3xl font-bold text-primary md:text-4xl;
 	}
 
 	h3 {
-		@apply font-slab text-4xl text-primary md:text-5xl;
+		@apply font-slab text-3xl text-primary md:text-4xl;
 	}
 
 	h4 {
-		@apply font-slab text-2xl font-bold text-primary md:text-4xl;
+		@apply font-slab text-xl font-bold text-primary md:text-3xl;
 	}
 
 	h5 {
-		@apply font-slab text-lg font-bold uppercase text-primary md:text-2xl;
+		@apply font-slab text-base font-bold uppercase text-primary md:text-xl;
 	}
 
 	h6 {
-		@apply font-slab text-lg font-bold text-primary md:text-2xl;
+		@apply font-slab text-base font-bold text-primary md:text-xl;
 	}
 
 	a {
-		@apply font-slab text-lg font-bold capitalize text-primary md:text-2xl;
+		@apply font-slab text-base font-bold capitalize text-primary md:text-xl;
 	}
 
 	p {
-		@apply font-sans text-lg text-primary md:text-2xl;
+		@apply font-sans text-base text-primary md:text-xl;
 	}
 
 	.body-lg {
-		@apply font-sans text-2xl text-primary md:text-4xl;
+		@apply font-sans text-lg text-primary md:text-2xl;
 	}
 
 	.body-sm {
-		@apply font-sans text-sm text-primary md:text-lg;
+		@apply font-sans text-xs text-primary md:text-base;
 	}
 
 	html {
-		@apply scroll-smooth bg-secondary scrollbar-hide;
+		@apply scroll-smooth bg-secondary scrollbar-hide max-w-[90%] mx-auto;
 	}
 }
 
