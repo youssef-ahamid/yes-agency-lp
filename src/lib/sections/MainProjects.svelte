@@ -5,8 +5,8 @@
   import Card from "$lib/components/ui/WorkCard.svelte";
   import Button from "$lib/components/base/Button.svelte";
 
-  export const projects = [];
-  export const title = '';
+  export let projects = [];
+  export let title = '';
 </script>
 
 <h1 class="mx-6">{title}</h1>
