@@ -31,7 +31,7 @@
 </script>
 
 <section class="mx-auto mb-12 flex max-w-7xl flex-wrap justify-center px-4 py-8" {id}>
-	<h1 class="mb-12 w-full text-left md:mb-24">{title}</h1>
+	<h1 class="mb-6 w-full text-left md:mb-12 mx-auto">{title}</h1>
 	<div
 		class="flex w-full snap-x snap-mandatory items-center overflow-x-scroll md:flex-wrap md:justify-around"
 	>

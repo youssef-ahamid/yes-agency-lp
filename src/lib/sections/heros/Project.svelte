@@ -10,7 +10,7 @@
 </script>
 
 <section {id}>
-	<Hero class="md:pt-6">
+	<Hero>
 		<div class="max-w-3xl relative">
 			<div class="absolute bottom-full -ml-6 md:-ml-10 -mb-3">
 				<Button underlined tertiary to="/projects">/projects/</Button>
