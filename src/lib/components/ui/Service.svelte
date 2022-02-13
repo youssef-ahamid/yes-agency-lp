@@ -12,7 +12,7 @@
 		<slot name="number" />
 	</h4>
 	<div
-		class="flex w-full flex-wrap md:flex-nowrap justify-between"
+		class="flex w-full flex-wrap md:flex-nowrap items-start justify-between"
 		class:flex-col-reverse={flip}
 		class:md:flex-row-reverse={flip}
 	>
