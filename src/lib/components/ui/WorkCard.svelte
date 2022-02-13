@@ -24,27 +24,25 @@
 </script>
 
 <div
-  class="relative w-80 rounded-3xl {!!details
+  class="relative w-80 rounded-3xl mx-auto {!!details
     ? 'flex flex-nowrap flex-col md:w-[70%] md:flex-row'
     : 'md:w-96 inline-block p-5'} bg-{clr.bg} shadow hover:shadow-2xl hover:shadow-{clr.bg}/20 mx-2 my-4 cursor-crosshair transition duration-300 ease-out md:mx-4 md:my-8"
   on:mouseenter={() => (hover = true)}
   on:mouseleave={() => (hover = false)}
 >
-  <div class="relative w-full">
-    <div
-      class="max-h-[70px] min-h-[40px] w-full max-w-[70%] text-{clr.text} {!!details
+<div
+class="max-h-[70px] min-h-[40px] w-full max-w-[70%] text-{clr.text} {!!details
         ? 'absolute right-2 top-4'
         : 'my-4'} fill-current transition duration-300 ease-out"
       class:brightness-100={!hover}
       class:brightness-[10]={hover &&
         !(clr.bg == "tertiary" || clr.bg == "primary")}
-      class:brightness-0={hover &&
+        class:brightness-0={hover &&
         (clr.bg == "tertiary" || clr.bg == "primary")}
     >
-      <slot name="logo" />
-    </div>
+    <slot name="logo" />
   </div>
-  <div class="flex flex-col">
+  <div class="flex flex-col px-5 py-4 {!!details? 'mt-6': ''}">
     <h4
       class="text-{clr.text} capitalize transition duration-300 ease-out {!!details
         ? 'order-2'
@@ -78,10 +76,10 @@
     class="flex flex-col w-full justify-end relative {!!details
       ? 'mt-4 md:mt-0 bg-cover bg-center bg-norepeat rounded-br-3xl rounded-bl-3xl md:rounded-tr-3xl md:rounded-bl-none'
       : 'py-0'}"
-    style={!!details ? `background-image: url(${details.img})` : ""}
+    style={!!details ? `background: url(${details.img})` : ""}
   >
   
-    <div class="w-full h-full bg-gradient-to-b to-{clr.bg} flex justify-end">
+    <div class="w-full h-full bg-gradient-to-b to-{clr.bg} flex justify-end relative">
       <Button
         ghost
         tertiary={!hover}
