@@ -12,11 +12,11 @@
 <h1 class="mx-6">{title}</h1>
 {#each projects as project, i}
   <div
-    in:fly={{ y: 50, x: pluralize(i, 20, -20), duration: 400 }}
-    out:fly={{ y: -20, x: pluralize(i, -20, 20), duration: 200 }}
+    in:fly={{ y: 50, x: -20, duration: 400 }}
+    out:fly={{ y: -20, x: 20, duration: 200 }}
     class="snap-center snap-always"
   >
-    <Card tags={project.tags} max_tags={2} slug={project.slug} details={{ img: project.main_image }}>
+    <Card tags={project.tags} max_tags={2} slug={project.slug} details={{ img: project.images[0] }}>
       <img
         src={project.client.logo}
         slot="logo"

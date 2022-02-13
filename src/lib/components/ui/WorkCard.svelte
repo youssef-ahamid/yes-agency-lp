@@ -24,7 +24,7 @@
 </script>
 
 <div
-  class="relative w-80 rounded-3xl p-5 {details
+  class="relative w-80 rounded-3xl p-5 {!!details
     ? 'flex flex-nowrap flex-col md:w-[70%] md:flex-row'
     : 'md:w-96 inline-block'} bg-{clr.bg} shadow hover:shadow-2xl hover:shadow-{clr.bg}/20 mx-2 my-4 cursor-crosshair transition duration-300 ease-out md:mx-4 md:my-8"
   on:mouseenter={() => (hover = true)}
@@ -56,7 +56,7 @@
     >
       <slot name="dates" />
     </p>
-    <div class="my-1 {details ? 'order-1' : 'order-3'}">
+    <div class="my-1 {!!details ? 'order-1' : 'order-3'}">
       {#each tags as tag, i}
         {#if i == max_tags}
           <Tag color={hover ? clr.bg : "blue-dark"} inverted={hover}
@@ -72,12 +72,12 @@
     </p>
   </div>
   <div
-    class="flex w-full justify-end relative {details
+    class="flex w-full justify-end relative {!!details
       ? 'py-4 bg-cover bg-center bg-norepeat rounded-br-3xl rounded-bl-3xl md:rounded-tr-3xl md:rounded-bl-none'
       : 'py-0'}"
-    style={details ? "background: url(${details.img})" : ""}
+    style={!!details ? "background: url(${details.img})" : ""}
   >
-    {#if details}
+    {#if !!details}
       <div class="w-full h-full absolute bg-gradient-to-b to-{clr.bg}" />
     {/if}
     <Button
