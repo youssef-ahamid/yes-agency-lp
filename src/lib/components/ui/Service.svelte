@@ -1,5 +1,6 @@
 <script>
-	export let flip;
+	export let flip = false;
+	export let img_src;
 </script>
 
 <div
@@ -15,7 +16,7 @@
 		class:flex-col-reverse={flip}
 		class:md:flex-row-reverse={flip}
 	>
-		<div class="mx-auto min-w-[250px] max-w-2xl px-6 md:mx-6">
+		<div class="mx-auto min-w-[200px] max-w-xl px-6 md:mx-6">
 			<h2 class="my-4 capitalize md:my-6"><slot name="title" /></h2>
 			<p class="max-w-[48ch]"><slot name="text" /></p>
 			<div
@@ -28,8 +29,8 @@
 				<slot name="button" />
 			</div>
 		</div>
-		<div class="mx-auto my-5 h-80 w-80 overflow-clip rounded-3xl md:mx-6 md:h-96 md:w-96">
-			<slot name="image" />
-		</div>
+		{#if img_src}
+			 <div class="mx-auto my-5 h-80 w-80 overflow-clip rounded-3xl md:mx-6 md:h-96 md:w-96 bg-cover bg-center" style="background-image: url({img_src})"></div>
+		{/if}	
 	</div>
 </div>

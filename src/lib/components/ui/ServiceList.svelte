@@ -5,11 +5,10 @@
 </script>
 
 {#each services as service, i}
-	<Service flip={(i + 1) % 2 == 0}>
+	<Service flip={(i + 1) % 2 == 0} img_src={service.img}>
+		<span slot="number">{i + 1}</span>
 		<span slot="title">{service.title}</span>
 		<span slot="text">{service.text}</span>
-		<span slot="number">{i + 1}</span>
-		<img src={service.img} slot="image" alt={service.title} class="block w-full" />
 		<Button {...service.action} slot="button" />
 	</Service>
 {/each}}
