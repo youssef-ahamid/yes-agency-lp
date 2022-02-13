@@ -104,7 +104,7 @@
 </script>
 
 <Navbar color="tertiary" />
-<div class="pt-32 md:pt-0">
+<div class="pt-24 md:pt-0">
 	<slot />
 </div>
 <Contact {...contactData} />

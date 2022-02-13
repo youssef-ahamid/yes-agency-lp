@@ -103,6 +103,8 @@
 	};
 </script>
 
-<slot />
+<div class="pt-24 md:pt-0">
+	<slot />
+</div>
 <Contact {...contactData} />
 <Footer {...footerData} />
