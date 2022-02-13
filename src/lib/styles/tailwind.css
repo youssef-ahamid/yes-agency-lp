@@ -8,7 +8,7 @@
 	/* Typography */
 
 	h1 {
-		@apply font-slab text-4xl text-primary md:text-6xl max-w-2xl;
+		@apply font-slab text-4xl text-primary md:text-6xl max-w-xl;
 	}
 
 	h2 {
@@ -48,7 +48,7 @@
 	}
 
 	html {
-		@apply scroll-smooth bg-secondary scrollbar-hide max-w-[90%] mx-auto;
+		@apply scroll-smooth bg-secondary scrollbar-hide;
 	}
 }
 
