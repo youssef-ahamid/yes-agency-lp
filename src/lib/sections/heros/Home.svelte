@@ -43,7 +43,7 @@
 
 <section {id}>
 	<Navbar color={words[index].color} />
-	<Hero long>
+	<Hero>
 		<div class="max-w-3xl py-2 px-2">
 			<h1 class="my-4 md:my-6">
 				{title}
