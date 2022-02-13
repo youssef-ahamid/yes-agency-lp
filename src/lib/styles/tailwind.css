@@ -8,43 +8,43 @@
 	/* Typography */
 
 	h1 {
-		@apply font-slab text-4xl text-primary md:text-6xl;
+		@apply font-slab text-4xl text-primary md:text-6xl max-w-2xl;
 	}
 
 	h2 {
-		@apply font-slab text-3xl font-bold text-primary md:text-4xl;
+		@apply font-slab text-3xl font-bold text-primary md:text-4xl max-w-3xl;
 	}
 
 	h3 {
-		@apply font-slab text-3xl text-primary md:text-4xl;
+		@apply font-slab text-3xl text-primary md:text-4xl max-w-[65ch];
 	}
 
 	h4 {
-		@apply font-slab text-xl font-bold text-primary md:text-3xl;
+		@apply font-slab text-xl font-bold text-primary md:text-3xl max-w-[65ch];
 	}
 
 	h5 {
-		@apply font-slab text-base font-bold uppercase text-primary md:text-xl;
+		@apply font-slab text-base font-bold uppercase text-primary md:text-xl max-w-[65ch];
 	}
 
 	h6 {
-		@apply font-slab text-base font-bold text-primary md:text-xl;
+		@apply font-slab text-base font-bold text-primary md:text-xl max-w-[65ch];
 	}
 
 	a {
-		@apply font-slab text-base font-bold capitalize text-primary md:text-xl;
+		@apply font-slab text-base font-bold capitalize text-primary md:text-xl max-w-[65ch];
 	}
 
 	p {
-		@apply font-sans text-base text-primary md:text-xl;
+		@apply font-sans text-base text-primary md:text-xl max-w-[65ch];
 	}
 
 	.body-lg {
-		@apply font-sans text-lg text-primary md:text-2xl;
+		@apply font-sans text-lg text-primary md:text-2xl max-w-[65ch];
 	}
 
 	.body-sm {
-		@apply font-sans text-xs text-primary md:text-base;
+		@apply font-sans text-xs text-primary md:text-base max-w-[65ch];
 	}
 
 	html {
