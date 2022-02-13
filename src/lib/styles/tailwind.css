@@ -36,11 +36,11 @@
 	}
 
 	p {
-		@apply font-sans text-base text-primary md:text-xl max-w-[65ch];
+		@apply font-sans font-extralight text-base text-primary md:text-xl max-w-[65ch];
 	}
 
 	.body-lg {
-		@apply font-sans text-lg text-primary md:text-2xl max-w-[65ch];
+		@apply font-sans font-extralight text-lg text-primary md:text-2xl max-w-[65ch];
 	}
 
 	.body-sm {
