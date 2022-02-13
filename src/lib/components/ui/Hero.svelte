@@ -8,7 +8,7 @@
 	class:pt-28={long}
 >
 	<div
-		class="flex w-full max-w-7xl flex-wrap items-center justify-start overflow-scroll px-2 md:justify-between"
+		class="flex w-full max-w-7xl flex-wrap md:flex-nowrap items-center justify-start overflow-scroll px-2 md:justify-between"
 	>
 		<slot />
 		{#if !long}
