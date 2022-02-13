@@ -104,6 +104,8 @@
 </script>
 
 <Navbar color="tertiary" />
-<slot />
+<div class="pt-32 md:pt-0">
+	<slot />
+</div>
 <Contact {...contactData} />
 <Footer {...footerData} />
