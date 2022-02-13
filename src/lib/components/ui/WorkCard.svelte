@@ -32,7 +32,7 @@
 >
   <div
     class="max-h-[70px] min-h-[40px] w-full max-w-[70%] text-{clr.text} {details
-      ? 'absolute right-0 top-0'
+      ? 'absolute right-2 top-4'
       : 'my-4'} fill-current transition duration-300 ease-out"
     class:brightness-100={!hover}
     class:brightness-[10]={hover &&
@@ -43,14 +43,14 @@
   </div>
   <div class="flex flex-col">
     <h4
-      class="text-{clr.text} capitalize transition duration-300 ease-out {details
+      class="text-{clr.text} capitalize transition duration-300 ease-out {!!details
         ? 'order-2'
         : 'order-1'}"
     >
       <slot name="title" />
     </h4>
     <p
-      class="body-sm text-opacity-75 text-{clr.text} capitalize transition duration-300 ease-out {details
+      class="body-sm text-opacity-75 text-{clr.text} capitalize transition duration-300 ease-out {!!details
         ? 'order-3'
         : 'order-2'}"
     >
@@ -67,15 +67,15 @@
         {/if}
       {/each}
     </div>
-    <p class="body-sm pr-3 max-w-[65ch]">
+    <p class="body-sm pr-3 max-w-[65ch] order-4 text-{clr.text}">
       <slot name="about" />
     </p>
   </div>
   <div
-    class="flex w-full justify-end relative {!!details
+    class="flex flex-col w-full justify-end relative {!!details
       ? 'py-4 bg-cover bg-center bg-norepeat rounded-br-3xl rounded-bl-3xl md:rounded-tr-3xl md:rounded-bl-none'
       : 'py-0'}"
-    style={!!details ? "background: url(${details.img})" : ""}
+    style={!!details ? `background-image: url(${details.img})` : ""}
   >
     {#if !!details}
       <div class="w-full h-full absolute bg-gradient-to-b to-{clr.bg}" />

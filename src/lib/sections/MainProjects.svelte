@@ -11,6 +11,7 @@
 
 <h1 class="mx-6">{title}</h1>
 {#each projects as project, i}
+<div class="w-full md:max-w-[90%] mx-auto flex {pluralize(i%2, 'flex-col-reverse', 'flex-col')}}"></div>
   <div
     in:fly={{ y: 50, x: -20, duration: 400 }}
     out:fly={{ y: -20, x: 20, duration: 200 }}
