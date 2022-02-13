@@ -6,7 +6,7 @@
 	import FeaturedServices from '$lib/sections/FeaturedServices.svelte';
 	import Contact from '$lib/sections/Contact.svelte';
 	import Footer from '$lib/sections/Footer.svelte';
-	import FeaturedProjects from '$lib/sections/FeaturedProjects.svelte';
+	import Projects from '$lib/sections/MainProjects.svelte';
 	import PersonalInfo from '$lib/components/ui/Onboarding/PersonalInfo.svelte';
 	import ServiceSelect from '$lib/components/ui/Onboarding/ServiceSelect.svelte';
 	import Success from '$lib/components/ui/Onboarding/Success.svelte';
@@ -29,7 +29,7 @@
 				name: 'unknown'
 			},
 			title: 'Hamoo',
-			about: 'this is the about section content',
+			about: 'this is the about section content. we can fill this with some background about the project, things we accomplished, or zebby el manga',
 			data: [
 				{
 					title: 'prop',
@@ -45,7 +45,10 @@
 					long: true
 				}
 			],
-			dates: 'may 16 - july 12'
+			images: [
+				'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVCiB1709wStX0SE_dWhcLLIOYK0qcPNYUeJtewS9AHKJ12quLgGno9SZUEsHO5wi4m6k&usqp=CAU',
+			],
+			dates: 'july \'22'
 		},
 		{
 			tags: [{ text: 'ui/ux', color: 'orange' }],
@@ -57,7 +60,7 @@
 				name: 'unknown'
 			},
 			title: 'no branding here',
-			about: 'this is the about section content',
+			about: 'this is the about section content. we can fill this with some background about the project, things we accomplished, or zebby el manga',
 			data: [
 				{
 					title: 'prop',
@@ -72,6 +75,9 @@
 					content: 'hello world this is me and my world',
 					long: true
 				}
+			],
+			images: [
+				'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVCiB1709wStX0SE_dWhcLLIOYK0qcPNYUeJtewS9AHKJ12quLgGno9SZUEsHO5wi4m6k&usqp=CAU',
 			],
 			dates: 'may 16 - july 12'
 		},
@@ -85,7 +91,7 @@
 				name: 'unknown'
 			},
 			title: 'only dev',
-			about: 'this is the about section content',
+			about: 'this is the about section content. we can fill this with some background about the project, things we accomplished, or zebby el manga',
 			data: [
 				{
 					title: 'prop',
@@ -100,6 +106,9 @@
 					content: 'hello world this is me and my world',
 					long: true
 				}
+			],
+			images: [
+				'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVCiB1709wStX0SE_dWhcLLIOYK0qcPNYUeJtewS9AHKJ12quLgGno9SZUEsHO5wi4m6k&usqp=CAU',
 			],
 			dates: 'may 16 - july 12'
 		}
@@ -242,7 +251,7 @@
 				{ underlined: true, text: 'button 2', to: '/projects' }
 			]}
 		/>
-		<FeaturedProjects {projects} title="Our Work" />
+		<Projects {projects} title="Our Work" />
 		<FeaturedServices {services} />
 		<Contact
 			{onboarding}
