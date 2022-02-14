@@ -33,7 +33,7 @@
 			class:md:w-64={!big}
 		/>
 		{#if action}
-			<Button {...action} on:click={submit} />
+			<Button {...action} on:click={submit} to="/services" />
 		{/if}
 		<div
 			class="absolute top-[100%] my-1 h-1 w-full origin-left scale-x-0 transform rounded-full bg-primary bg-opacity-75 transition duration-200 ease-out peer-focus:scale-x-100 md:my-2"

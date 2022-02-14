@@ -1,7 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
 	import { fade, fly } from 'svelte/transition';
-
+	import Button from '$lib/components/base/Button.svelte'
 	import Hero from '$lib/sections/heros/Home.svelte';
 	import FeaturedServices from '$lib/sections/FeaturedServices.svelte';
 	import Contact from '$lib/sections/Contact.svelte';
@@ -12,6 +12,7 @@
 	import Success from '$lib/components/ui/Onboarding/Success.svelte';
 	import Budget from '$lib/components/ui/Onboarding/Budget.svelte';
 	import { loaded } from '$lib/store/META';
+	import Modal from '$lib/components/base/Modal.svelte';
 
 	let projects = [
 		{
@@ -227,6 +228,7 @@
 			}
 		}
 	};
+	let modal = false
 	onMount(() => {
 		setTimeout(() => {
 			!$loaded ? loaded.set(true) : '';
@@ -235,7 +237,7 @@
 </script>
 
 {#if $loaded}
-	<div in:fly={{ x: -30, duration: 600, delay: 600 }}>
+	<div in:fly={{ x: -30, duration: 600, delay: 600 }} on:fireModal={() => {modal = true}}>
 		<Hero
 			words={[
 				{ text: 'lorem', color: 'tertiary' },
@@ -251,8 +253,8 @@
 				{ underlined: true, text: 'button 2', to: '/projects' }
 			]}
 		/>
-		<Projects {projects} title="Our Work" />
 		<FeaturedServices {services} />
+		<Projects {projects} title="Our Work" />
 		<Contact
 			{onboarding}
 			title="Connect on a project"
@@ -327,4 +329,3 @@
 		/>
 	</svg>
 {/if}
-

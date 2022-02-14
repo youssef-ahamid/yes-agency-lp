@@ -41,7 +41,7 @@
 	onMount(() => setup());
 </script>
 
-<section {id}>
+<section {id} on:fireModal>
 	<Navbar color={words[index].color} />
 	<Hero>
 		<div class="max-w-3xl py-2 px-2">
@@ -57,7 +57,7 @@
 				{/if}
 			</h1>
 			<p>{subtitle}</p>
-			<div class="my-8 flex w-full">
+			<div class="my-8 flex w-full" on:fireModal>
 				{#each actions as action}
 					<Button
 						{...action}

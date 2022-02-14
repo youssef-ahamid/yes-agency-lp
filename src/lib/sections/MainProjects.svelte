@@ -9,7 +9,7 @@
   export let title = "";
 </script>
 
-<h1 class="mx-6">{title}</h1>
+<h1 class="mx-auto max-w-[90%] w-full pl-4 py-6">{title}</h1>
 
 {#each projects as project, i}
   <div
@@ -44,7 +44,7 @@
   </div>
 {/each}
 
-<div class="mb-20 flex w-full justify-center md:mb-40">
+<div class="mb-12 py-6 flex w-full justify-center md:mb-24">
   <Button tertiary round to="/projects">All Projects</Button>
 </div>
 <div class="justify-start justify-end" />

@@ -1,4 +1,7 @@
 <script>
+	import { createEventDispatcher } from "svelte";
+
+
 	export let to = '';
 	export let round = false;
 	export let ghost = false;
@@ -12,12 +15,14 @@
 	export let tertiary = false;
 	export let icon = false;
 	export let text;
+
+	const dispatch = createEventDispatcher();
 </script>
 
 {#if to.length == 0}
 	<button
 		on:click|preventDefault
-		class="group flex flex-wrap items-center rounded-full transition duration-300 ease-out hover:shadow-primary/20 focus:ring-2 focus:ring-current focus:ring-offset-2"
+		class="group flex flex-wrap items-center rounded-full transition duration-300 ease-out hover:shadow-primary/20 focus-visible:ring-2 focus-visible:ring-current focus-visible:ring-offset-2"
 		class:hover:shadow-lg={round}
 		class:hover:bg-primary={round}
 		class:bg-primary={round && primary}
@@ -83,7 +88,7 @@
 	</button>
 {:else}
 	<button
-		class="group flex flex-wrap items-center rounded-full transition duration-300 ease-out hover:shadow-primary/20 focus:ring-2 focus:ring-current focus:ring-offset-2"
+		class="group flex flex-wrap items-center rounded-full transition duration-300 ease-out hover:shadow-primary/20 focus-visible:ring-2 focus-visible:ring-current focus-visible:ring-offset-2"
 		class:hover:shadow-lg={round}
 		class:hover:bg-primary={round}
 		class:bg-primary={round && primary}
@@ -101,8 +106,8 @@
 		class:text-green={green}
 		class:text-purple={purple}
 	>
-		<a
-			href={to}
+	<a
+		href={to}
 			class:text-secondary={(tertiary && round) || (primary && round) || (secondary && ghost)}
 			class:text-tertiary={tertiary && ghost}
 			class:text-blue={blue && ghost}

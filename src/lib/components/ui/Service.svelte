@@ -4,11 +4,11 @@
 </script>
 
 <div
-	class="my-32 mx-auto flex w-full max-w-7xl flex-wrap p-2 md:my-40 md:flex-nowrap"
+	class="my-12 mx-auto flex w-full max-w-[90%] flex-wrap p-2 md:my-20 md:flex-nowrap"
 	class:justify-end={flip}
 	class:md:justify-start={flip}
 >
-	<h4 class="mx-6 text-7xl font-bold text-opacity-50 md:mx-4 md:text-8xl">
+	<h4 class="mx-6 text-6xl font-bold text-opacity-50 md:mx-4 md:text-8xl">
 		<slot name="number" />
 	</h4>
 	<div

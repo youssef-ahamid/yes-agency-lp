@@ -11,7 +11,7 @@
 	let open = false;
 </script>
 
-<section class="mx-auto max-w-7xl scroll-mt-20 px-4 py-8 pt-20" id="connect">
+<section class="mx-auto max-w-[90%] scroll-mt-20 px-4 py-8 pt-20" id="connect">
 	<h1 class="my-7 md:my-12">{title}</h1>
 	<p class="max-w-2xl">{text}</p>
 	<TextInput
