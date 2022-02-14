@@ -10,18 +10,19 @@
 </script>
 
 <h1 class="mx-6">{title}</h1>
+
 {#each projects as project, i}
   <div
-    class="w-full md:max-w-[90%] mx-auto flex {pluralize(
-      i % 2,
-      'md:justify-start',
-      'md:justify-end'
-    )}"
+    class="w-full md:max-w-[90%] mx-auto flex justify-center"
   >
     <div
       in:fly={{ y: 50, x: -20, duration: 400 }}
       out:fly={{ y: -20, x: 20, duration: 200 }}
-      class="inline-block"
+      class="flex {pluralize(
+        i % 2,
+        'md:justify-start',
+        'md:justify-end'
+      )}"
     >
       <Card
         tags={project.tags}
