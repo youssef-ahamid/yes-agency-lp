@@ -7,7 +7,7 @@
 	import Button from '$lib/components/base/Button.svelte';
 	import Hero from '$lib/components/ui/Hero.svelte';
 
-	export let title, subtitle, words;
+	export let title, subtitle, words, titleAfter;
 	export let speed = 1;
 	export let actions = [];
 
@@ -55,6 +55,8 @@
 						on:outroend={next}>{words[index].text}</span
 					>
 				{/if}
+				<br>
+				{titleAfter}
 			</h1>
 			<p>{subtitle}</p>
 			<div class="my-8 flex w-full" on:fireModal>

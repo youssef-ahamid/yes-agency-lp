@@ -239,15 +239,18 @@
 {#if $loaded}
 	<div in:fly={{ x: -30, duration: 600, delay: 600 }} on:fireModal={() => {modal = true}}>
 		<Hero
+			speed=2
 			words={[
-				{ text: 'lorem', color: 'tertiary' },
-				{ text: 'ipsum', color: 'purple' },
-				{ text: 'dolor', color: 'orange' },
-				{ text: 'sit', color: 'green' },
-				{ text: 'amit', color: 'blue' }
+				{ text: 'Marketing Style', color: 'blue' },
+				{ text: 'Tech Savviness', color: 'green' },
+				{ text: 'Branding Finesse', color: 'purple' },
+				{ text: 'Design', color: 'orange' }
 			]}
-			title="Welcome to the loremest website ever with "
-			subtitle="hagat ketir awy mesh 3aref ahottaha fein shakly keda hahottaha f teez el bye2ra el kalm dah el howa ana bas hahahah"
+			title="Make your"
+			titleAfter="Irresistible."
+			subtitle="We do everything and anything digital. From website development to design to marketing, we do it all and we do it fast.
+			Get your brand to keep up with the most recent trends, create a brand that lasts
+			and do it with style."
 			actions={[
 				{ round: true, text: 'button 1', to: '/services/branding' },
 				{ underlined: true, text: 'button 2', to: '/projects' }
@@ -257,8 +260,8 @@
 		<Projects {projects} title="Our Work" />
 		<Contact
 			{onboarding}
-			title="Connect on a project"
-			text="this is the text that will go under the contact us form title. it doesn't need to be very long b ut here it is anyway."
+			title="Bored of scrolling? Talk to a human."
+			text="We have the most flexible chat team. We can talk via Email, Whatsapp, Zoom, Phone Call, whatever is most convenient for you, we'll do!"
 		/>
 		<Footer
 			tel="+2012000525233"
