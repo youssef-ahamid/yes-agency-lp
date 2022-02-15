@@ -47,6 +47,7 @@
 		<div class="max-w-3xl py-2 px-2">
 			<h1 class="my-4 md:my-6">
 				{title}
+				<br>
 				{#if textVisible}
 					<span
 						class={`underline underline-offset-4 decoration-${words[index].color}`}
