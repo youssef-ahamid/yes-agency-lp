@@ -122,23 +122,45 @@
 	];
 	const services = [
 		{
+			title: 'Web Development',
+			text: 'Our Ivy-league trained web developers and designers use the most sophisticated methods to create the best looking, best functioning technologies for your customers to enjoy.<br>Plot Twist:<br>We do it in around 2 weeks<br>(This site was crafted in 7 days)',
+			img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVCiB1709wStX0SE_dWhcLLIOYK0qcPNYUeJtewS9AHKJ12quLgGno9SZUEsHO5wi4m6k&usqp=CAU',
+			action: {
+				green: true,
+				text: 'Get Started',
+				to: '/services/dev',
+				underlined: true
+			}
+		},
+		{
+			title: 'Digital Marketing',
+			text: 'Do you have 0$ for your promotional spend and still want to get customers? We\'ll find the most risk-free ways for you to get customers and we\'ll do it. (Check out how we helped Funnelll get £10,000 in 2 hours without spending 1 dollar).<br><br>Do you have a $100,000 marketing budget and don\'t want to put it in the wrong marketing plan?',
+			img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVCiB1709wStX0SE_dWhcLLIOYK0qcPNYUeJtewS9AHKJ12quLgGno9SZUEsHO5wi4m6k&usqp=CAU',
+			action: {
+				blue: true,
+				text: 'Get Started',
+				to: '/services/branding',
+				underlined: true
+			}
+		},
+		{
 			title: 'UI/UX',
-			text: 'Hello my son this is the text hello my son this is the text hello my son this is the text hello my son this is the text hello my son this is the text hello my son this is the text hello my son this is the text',
+			text: 'We make Designs That Matter<br> Here are 2 reasons why any great product or service can fail:<br><br>- Bad UX (User Experience Design).<br>If people don\'t know how to use your product seamlessly they will click off and your great product remains unused and your money is wasted.<br><br>-Bad UI Design<br>With great products come great expectations. Any good product or service is reliant on top tier designs to function.<br><br>Yes Agency has recruited designers who\'ve mastered the best practices in both design and execution to make your product or service flow smoothly.',
 			img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVCiB1709wStX0SE_dWhcLLIOYK0qcPNYUeJtewS9AHKJ12quLgGno9SZUEsHO5wi4m6k&usqp=CAU',
 			action: {
 				orange: true,
-				text: 'lorem button',
+				text: 'Get Started',
 				to: '/services/ui-ux',
 				underlined: true
 			}
 		},
 		{
-			title: 'branding',
-			text: 'hello my son this is the text hello my son this is the text hello my son this is the text',
+			title: 'Branding',
+			text: 'Your brand is original. Make it look like it.<br><br>There\'s a story behind any brand that is created, a story of a family business, or a story of legacy. Of heritage. Of excellence.<br>Let your customers feel what makes your brand different through Brand Identity Documents, and Creative templates that you can use to create an all-encompassing brand that people will remember long after they\'ve done business with you.',
 			img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVCiB1709wStX0SE_dWhcLLIOYK0qcPNYUeJtewS9AHKJ12quLgGno9SZUEsHO5wi4m6k&usqp=CAU',
 			action: {
 				purple: true,
-				text: 'get branded!',
+				text: 'Get Started',
 				to: '/services/branding',
 				underlined: true
 			}
@@ -244,7 +266,8 @@
 				{ text: 'Marketing Style', color: 'blue' },
 				{ text: 'Tech Savviness', color: 'green' },
 				{ text: 'Branding Finesse', color: 'purple' },
-				{ text: 'Design', color: 'orange' }
+				{ text: 'Design', color: 'orange' },
+				{ text: 'Company', color: 'tertiary' }
 			]}
 			title="Make your"
 			titleAfter="Irresistible."
@@ -252,8 +275,8 @@
 			Get your brand to keep up with the most recent trends, create a brand that lasts
 			and do it with style."
 			actions={[
-				{ round: true, text: 'button 1', to: '/services/branding' },
-				{ underlined: true, text: 'button 2', to: '/projects' }
+				{ round: true, text: 'Get Started', to: '/services/branding' },
+				{ underlined: true, text: 'Get in Touch', to: '/projects' }
 			]}
 		/>
 		<FeaturedServices {services} />
