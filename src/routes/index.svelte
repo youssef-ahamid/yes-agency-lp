@@ -26,7 +26,7 @@
 			client: {
 				logo: 'https://upload.wikimedia.org/wikipedia/commons/e/ee/Aramex_logo.svg',
 				slug: 'ARAMCO VENDORS',
-				name: 'unknown'
+				name: 'aramco'
 			},
 			title: 'ARAMCO Vendors',
 			about: `YesMarketing Created the Entirety of these Brand\'s Written Digital Content, this resulted in 3 cash positive partnerships with several of the oil industry's biggest names. 
@@ -137,7 +137,7 @@ Our Marketing Team Created the now-famous " We. Know. Oil." tagline which is now
 			max_tags: 4,
 			slug: 'egicat',
 			client: {
-				logo: 'https://upload.wikimedia.org/wikipedia/commons/e/ee/Aramex_logo.svg',
+				logo: '/svgs/egicat.svg',
 				slug: 'egicat',
 				name: 'egicat'
 			},
