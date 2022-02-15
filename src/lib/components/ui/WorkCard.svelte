@@ -61,7 +61,7 @@
 				{/if}
 			{/each}
 		</div>
-		<p class="body-sm order-4 max-w-[65ch] pr-3 text-{clr.text}">
+		<p class="body-sm order-4 max-w-[65ch] pr-3 text-{clr.text} whitespace-pre-line">
 			<slot name="about" />
 		</p>
 	</div>

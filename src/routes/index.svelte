@@ -25,11 +25,15 @@
 			slug: 'aramco',
 			client: {
 				logo: 'https://upload.wikimedia.org/wikipedia/commons/e/ee/Aramex_logo.svg',
-				slug: 'aramex',
+				slug: 'ARAMCO VENDORS',
 				name: 'unknown'
 			},
 			title: 'ARAMCO Vendors',
-			about: 'this is the about section content. we can fill this with some background about the project, things we accomplished, or zebby el manga',
+			about: `YesMarketing Created the Entirety of these Brand\'s Written Digital Content, this resulted in 3 cash positive partnerships with several of the oil industry's biggest names. 
+			
+			Project Highlight:
+Our Marketing Team Created the now-famous " We. Know. Oil." tagline which is now a watermark for these brands.
+`,
 			data: [
 				{
 					title: 'prop',
@@ -48,19 +52,25 @@
 			images: [
 				'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVCiB1709wStX0SE_dWhcLLIOYK0qcPNYUeJtewS9AHKJ12quLgGno9SZUEsHO5wi4m6k&usqp=CAU',
 			],
-			dates: 'july \'22'
+			dates: ''
 		},
 		{
-			tags: [{ text: 'ui/ux', color: 'orange' }],
+			tags: [
+				{ text: 'marketing', color: 'blue' },
+				{ color: 'purple', text: 'branding' }
+			],
 			max_tags: 2,
-			slug: 'armageddon',
+			slug: 'JICA',
 			client: {
 				logo: 'https://upload.wikimedia.org/wikipedia/commons/e/ee/Aramex_logo.svg',
-				slug: 'aramex',
-				name: 'unknown'
+				slug: 'JICA',
+				name: 'JICA'
 			},
-			title: 'no branding here',
-			about: 'this is the about section content. we can fill this with some background about the project, things we accomplished, or zebby el manga',
+			title: 'JICA',
+			about: `Created all content for their press releases, targeting Egyptian startup founders
+			
+			Their content was featured in prominent Egyptian tech magazines.
+			`,
 			data: [
 				{
 					title: 'prop',
@@ -78,20 +88,26 @@
 			],
 			images: [
 				'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVCiB1709wStX0SE_dWhcLLIOYK0qcPNYUeJtewS9AHKJ12quLgGno9SZUEsHO5wi4m6k&usqp=CAU',
-			],
-			dates: 'may 16 - july 12'
+			]
 		},
 		{
-			tags: [{ text: 'dev', color: 'green' }],
+			tags: [
+				{ text: 'marketing', color: 'blue' },
+				{ text: 'ui/ux', color: 'orange' },
+				{ color: 'green', text: 'development' }
+			],
 			max_tags: 2,
-			slug: 'armageddon',
+			slug: 'medicon',
 			client: {
 				logo: 'https://upload.wikimedia.org/wikipedia/commons/e/ee/Aramex_logo.svg',
-				slug: 'aramex',
-				name: 'unknown'
+				slug: 'medicon',
+				name: 'medicon'
 			},
-			title: 'only dev',
-			about: 'this is the about section content. we can fill this with some background about the project, things we accomplished, or zebby el manga',
+			title: 'MEDICON',
+			about: `The Medicon Team asked us to create the entirety of their online presence, from website design to development, to creating content that showed just how much of an Elite brand it was.
+			
+			In 2 weeks and with a minimal budget, we delivered mediconR7.com
+			`,
 			data: [
 				{
 					title: 'prop',
@@ -109,8 +125,80 @@
 			],
 			images: [
 				'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVCiB1709wStX0SE_dWhcLLIOYK0qcPNYUeJtewS9AHKJ12quLgGno9SZUEsHO5wi4m6k&usqp=CAU',
+			]
+		},
+		{
+			tags: [
+				{ text: 'marketing', color: 'blue' },
+				{ color: 'purple', text: 'branding' }
 			],
-			dates: 'may 16 - july 12'
+			max_tags: 2,
+			slug: 'JICA',
+			client: {
+				logo: 'https://upload.wikimedia.org/wikipedia/commons/e/ee/Aramex_logo.svg',
+				slug: 'JICA',
+				name: 'JICA'
+			},
+			title: 'JICA',
+			about: `Created all content for their press releases, targeting Egyptian startup founders
+			
+			Their content was featured in prominent Egyptian tech magazines.
+			`,
+			data: [
+				{
+					title: 'prop',
+					content: 'data'
+				},
+				{
+					title: 'prop2',
+					content: 'data2'
+				},
+				{
+					title: 'prop3',
+					content: 'hello world this is me and my world',
+					long: true
+				}
+			],
+			images: [
+				'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVCiB1709wStX0SE_dWhcLLIOYK0qcPNYUeJtewS9AHKJ12quLgGno9SZUEsHO5wi4m6k&usqp=CAU',
+			]
+		},
+		{
+			tags: [
+				{ text: 'marketing', color: 'blue' },
+				{ text: 'ui/ux', color: 'orange' },
+				{ color: 'green', text: 'development' }
+			],
+			max_tags: 2,
+			slug: 'medicon',
+			client: {
+				logo: 'https://upload.wikimedia.org/wikipedia/commons/e/ee/Aramex_logo.svg',
+				slug: 'medicon',
+				name: 'medicon'
+			},
+			title: 'EGICAT, Africa\'s Biggest MEP contractor',
+			about: `Created a Premium Designed Website with a CMS, all web content and imagery included.
+			
+			Crafted and delivered in a total of 3 weeks
+			`,
+			data: [
+				{
+					title: 'prop',
+					content: 'data'
+				},
+				{
+					title: 'prop2',
+					content: 'data2'
+				},
+				{
+					title: 'prop3',
+					content: 'hello world this is me and my world',
+					long: true
+				}
+			],
+			images: [
+				'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVCiB1709wStX0SE_dWhcLLIOYK0qcPNYUeJtewS9AHKJ12quLgGno9SZUEsHO5wi4m6k&usqp=CAU',
+			]
 		}
 	];
 	const tags = [
@@ -122,7 +210,10 @@
 	const services = [
 		{
 			title: 'Web Development',
-			text: 'Our Ivy-league trained web developers and designers use the most sophisticated methods to create the best looking, best functioning technologies for your customers to enjoy.<br>Plot Twist:<br>We do it in around 2 weeks<br>(This site was crafted in 7 days)',
+			text: `Our Ivy-league trained web developers and designers use the most sophisticated methods to create the best looking, best functioning technologies for your customers to enjoy.
+			Plot Twist:
+			We do it in around 2 weeks
+			(This site was crafted in 7 days)`,
 			img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVCiB1709wStX0SE_dWhcLLIOYK0qcPNYUeJtewS9AHKJ12quLgGno9SZUEsHO5wi4m6k&usqp=CAU',
 			action: {
 				green: true,
@@ -133,7 +224,9 @@
 		},
 		{
 			title: 'Digital Marketing',
-			text: 'Do you have 0$ for your promotional spend and still want to get customers? We\'ll find the most risk-free ways for you to get customers and we\'ll do it. (Check out how we helped Funnelll get £10,000 in 2 hours without spending 1 dollar).<br><br>Do you have a $100,000 marketing budget and don\'t want to put it in the wrong marketing plan?',
+			text: `Do you have 0$ for your promotional spend and still want to get customers? We\'ll find the most risk-free ways for you to get customers and we\'ll do it. (Check out how we helped Funnelll get £10,000 in 2 hours without spending 1 dollar).
+			
+			Do you have a $100,000 marketing budget and don\'t want to put it in the wrong marketing plan?`,
 			img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVCiB1709wStX0SE_dWhcLLIOYK0qcPNYUeJtewS9AHKJ12quLgGno9SZUEsHO5wi4m6k&usqp=CAU',
 			action: {
 				blue: true,
@@ -144,7 +237,16 @@
 		},
 		{
 			title: 'UI/UX',
-			text: 'We make Designs That Matter<br> Here are 2 reasons why any great product or service can fail:<br><br>- Bad UX (User Experience Design).<br>If people don\'t know how to use your product seamlessly they will click off and your great product remains unused and your money is wasted.<br><br>-Bad UI Design<br>With great products come great expectations. Any good product or service is reliant on top tier designs to function.<br><br>Yes Agency has recruited designers who\'ve mastered the best practices in both design and execution to make your product or service flow smoothly.',
+			text: `We make Designs That Matter
+			 Here are 2 reasons why any great product or service can fail:
+			
+			- Bad UX (User Experience Design).
+			If people don\'t know how to use your product seamlessly they will click off and your great product remains unused and your money is wasted.
+			
+			-Bad UI Design
+			With great products come great expectations. Any good product or service is reliant on top tier designs to function.
+			
+			Yes Agency has recruited designers who\'ve mastered the best practices in both design and execution to make your product or service flow smoothly.`,
 			img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVCiB1709wStX0SE_dWhcLLIOYK0qcPNYUeJtewS9AHKJ12quLgGno9SZUEsHO5wi4m6k&usqp=CAU',
 			action: {
 				orange: true,
@@ -155,7 +257,10 @@
 		},
 		{
 			title: 'Branding',
-			text: 'Your brand is original. Make it look like it.<br><br>There\'s a story behind any brand that is created, a story of a family business, or a story of legacy. Of heritage. Of excellence.<br>Let your customers feel what makes your brand different through Brand Identity Documents, and Creative templates that you can use to create an all-encompassing brand that people will remember long after they\'ve done business with you.',
+			text: `Your brand is original. Make it look like it.
+			
+			There\'s a story behind any brand that is created, a story of a family business, or a story of legacy. Of heritage. Of excellence.
+			Let your customers feel what makes your brand different through Brand Identity Documents, and Creative templates that you can use to create an all-encompassing brand that people will remember long after they\'ve done business with you.`,
 			img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVCiB1709wStX0SE_dWhcLLIOYK0qcPNYUeJtewS9AHKJ12quLgGno9SZUEsHO5wi4m6k&usqp=CAU',
 			action: {
 				purple: true,
