@@ -24,7 +24,7 @@
 			max_tags: 4,
 			slug: 'aramco',
 			client: {
-				logo: 'https://upload.wikimedia.org/wikipedia/commons/e/ee/Aramex_logo.svg',
+				logo: '/svgs/aramco.svg',
 				slug: 'ARAMCO VENDORS',
 				name: 'aramco'
 			},
@@ -61,7 +61,7 @@ Our Marketing Team Created the now-famous " We. Know. Oil." tagline which is now
 			max_tags: 4,
 			slug: 'JICA',
 			client: {
-				logo: 'https://upload.wikimedia.org/wikipedia/commons/e/ee/Aramex_logo.svg',
+				logo: '/svgs/jica.svg',
 				slug: 'JICA',
 				name: 'JICA'
 			},
@@ -99,7 +99,7 @@ Our Marketing Team Created the now-famous " We. Know. Oil." tagline which is now
 			max_tags: 4,
 			slug: 'medicon',
 			client: {
-				logo: 'https://upload.wikimedia.org/wikipedia/commons/e/ee/Aramex_logo.svg',
+				logo: '/svgs/medicon.svg',
 				slug: 'medicon',
 				name: 'medicon'
 			},
