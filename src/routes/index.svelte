@@ -49,7 +49,7 @@ Our Marketing Team Created the now-famous " We. Know. Oil." tagline which is now
 				}
 			],
 			images: [
-				'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVCiB1709wStX0SE_dWhcLLIOYK0qcPNYUeJtewS9AHKJ12quLgGno9SZUEsHO5wi4m6k&usqp=CAU',
+				'https://i.ibb.co/cX5hDJK/EB38-CA7-D-F70-A-4380-9723-532-DBBDC81-CA.jpg',
 			],
 			dates: ''
 		},
@@ -86,8 +86,9 @@ Our Marketing Team Created the now-famous " We. Know. Oil." tagline which is now
 				}
 			],
 			images: [
-				'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVCiB1709wStX0SE_dWhcLLIOYK0qcPNYUeJtewS9AHKJ12quLgGno9SZUEsHO5wi4m6k&usqp=CAU',
-			]
+				'https://i.ibb.co/sjXfs5j/3-FEB6272-7-BB8-47-D2-97-B0-2305-DF994706.jpg',
+			],
+			dates: ''
 		},
 		{
 			tags: [
@@ -123,8 +124,9 @@ Our Marketing Team Created the now-famous " We. Know. Oil." tagline which is now
 				}
 			],
 			images: [
-				'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVCiB1709wStX0SE_dWhcLLIOYK0qcPNYUeJtewS9AHKJ12quLgGno9SZUEsHO5wi4m6k&usqp=CAU',
-			]
+				'https://i.ibb.co/KxZTpmG/4199-D7-E3-B4-EC-4168-BE71-2-D145-AF5-B35-C.jpg',
+			],
+			dates: ''
 		},
 		{
 			tags: [
@@ -133,11 +135,11 @@ Our Marketing Team Created the now-famous " We. Know. Oil." tagline which is now
 				{ text: 'ui/ux', color: 'orange' }
 			],
 			max_tags: 4,
-			slug: 'medicon',
+			slug: 'egicat',
 			client: {
 				logo: 'https://upload.wikimedia.org/wikipedia/commons/e/ee/Aramex_logo.svg',
-				slug: 'medicon',
-				name: 'medicon'
+				slug: 'egicat',
+				name: 'egicat'
 			},
 			title: 'EGICAT, Africa\'s Biggest MEP contractor',
 			about: `Created a Premium Designed Website with a CMS, all web content and imagery included.
@@ -160,8 +162,9 @@ Our Marketing Team Created the now-famous " We. Know. Oil." tagline which is now
 				}
 			],
 			images: [
-				'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVCiB1709wStX0SE_dWhcLLIOYK0qcPNYUeJtewS9AHKJ12quLgGno9SZUEsHO5wi4m6k&usqp=CAU',
-			]
+				'https://i.ibb.co/JFsjqMn/6-AE568-DA-69-C5-4988-AEBA-AAF506696236.jpg',
+			],
+			dates: ''
 		}
 	];
 	const tags = [
@@ -178,7 +181,7 @@ Our Marketing Team Created the now-famous " We. Know. Oil." tagline which is now
 			Plot Twist:
 			We do it in around 2 weeks
 			(This site was crafted in 7 days)`,
-			img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVCiB1709wStX0SE_dWhcLLIOYK0qcPNYUeJtewS9AHKJ12quLgGno9SZUEsHO5wi4m6k&usqp=CAU',
+			img: 'https://i.ibb.co/dpgCwLK/5-F82-E387-1-B93-40-D2-B8-E7-FE42810-EF600.jpg',
 			action: {
 				green: true,
 				text: 'Get Started',
@@ -191,7 +194,7 @@ Our Marketing Team Created the now-famous " We. Know. Oil." tagline which is now
 			text: `Do you have 0$ for your promotional spend and still want to get customers? We\'ll find the most risk-free ways for you to get customers and we\'ll do it. (Check out how we helped Funnelll get £10,000 in 2 hours without spending 1 dollar).
 			
 			Do you have a $100,000 marketing budget and don\'t want to put it in the wrong marketing plan?`,
-			img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVCiB1709wStX0SE_dWhcLLIOYK0qcPNYUeJtewS9AHKJ12quLgGno9SZUEsHO5wi4m6k&usqp=CAU',
+			img: 'https://i.ibb.co/b1vzy2f/1-A9349-E0-1-E10-4-D20-9054-0-B6-F6-AB9-E40-B.jpg',
 			action: {
 				blue: true,
 				text: 'Get Started',
@@ -211,7 +214,7 @@ Our Marketing Team Created the now-famous " We. Know. Oil." tagline which is now
 			With great products come great expectations. Any good product or service is reliant on top tier designs to function.
 			
 			Yes Agency has recruited designers who\'ve mastered the best practices in both design and execution to make your product or service flow smoothly.`,
-			img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVCiB1709wStX0SE_dWhcLLIOYK0qcPNYUeJtewS9AHKJ12quLgGno9SZUEsHO5wi4m6k&usqp=CAU',
+			img: 'https://i.ibb.co/rbwGmJT/0-B896-AAE-D08-F-4-AED-9523-F386-CC75-B51-F.png',
 			action: {
 				orange: true,
 				text: 'Get Started',
@@ -225,7 +228,7 @@ Our Marketing Team Created the now-famous " We. Know. Oil." tagline which is now
 			
 			There\'s a story behind any brand that is created, a story of a family business, or a story of legacy. Of heritage. Of excellence.
 			Let your customers feel what makes your brand different through Brand Identity Documents, and Creative templates that you can use to create an all-encompassing brand that people will remember long after they\'ve done business with you.`,
-			img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVCiB1709wStX0SE_dWhcLLIOYK0qcPNYUeJtewS9AHKJ12quLgGno9SZUEsHO5wi4m6k&usqp=CAU',
+			img: 'https://i.ibb.co/PDyWKHY/C0-C40-F17-F744-49-D7-93-AE-BEFE59-F45-D6-E.jpg',
 			action: {
 				purple: true,
 				text: 'Get Started',
