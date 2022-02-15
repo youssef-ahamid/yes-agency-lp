@@ -18,7 +18,7 @@
 		{
 			tags: [
 				{ text: 'marketing', color: 'blue' },
-				{ color: 'green', text: 'development' }
+				{ color: 'green', text: 'development' },
 				{ text: 'ui/ux', color: 'orange' },
 			],
 			max_tags: 4,
@@ -92,7 +92,7 @@ Our Marketing Team Created the now-famous " We. Know. Oil." tagline which is now
 		{
 			tags: [
 				{ text: 'marketing', color: 'blue' },
-				{ color: 'green', text: 'development' }
+				{ color: 'green', text: 'development' },
 				{ text: 'ui/ux', color: 'orange' },
 			],
 			max_tags: 4,
@@ -129,8 +129,8 @@ Our Marketing Team Created the now-famous " We. Know. Oil." tagline which is now
 		{
 			tags: [
 				{ text: 'marketing', color: 'blue' },
-				{ color: 'green', text: 'development' }
-				{ text: 'ui/ux', color: 'orange' },
+				{ color: 'green', text: 'development' },
+				{ text: 'ui/ux', color: 'orange' }
 			],
 			max_tags: 4,
 			slug: 'medicon',
