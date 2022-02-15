@@ -17,19 +17,18 @@
 	let projects = [
 		{
 			tags: [
-				{ text: 'branding', color: 'purple' },
+				{ text: 'marketing', color: 'blue' },
 				{ text: 'ui/ux', color: 'orange' },
-				{ color: 'green', text: 'dev' },
-				{ color: 'green', text: 'dev' }
+				{ color: 'green', text: 'development' }
 			],
-			max_tags: 2,
-			slug: 'armageddon',
+			max_tags: 3,
+			slug: 'aramco',
 			client: {
 				logo: 'https://upload.wikimedia.org/wikipedia/commons/e/ee/Aramex_logo.svg',
 				slug: 'aramex',
 				name: 'unknown'
 			},
-			title: 'Hamoo',
+			title: 'ARAMCO Vendors',
 			about: 'this is the about section content. we can fill this with some background about the project, things we accomplished, or zebby el manga',
 			data: [
 				{
@@ -280,7 +279,7 @@
 			]}
 		/>
 		<FeaturedServices {services} />
-		<Projects {projects} title="Our Work" />
+		<Projects {projects} title="Most recent projects" />
 		<Contact
 			{onboarding}
 			title="Bored of scrolling? Talk to a human."
