@@ -6,7 +6,7 @@
 
 	export let tags = [];
 	export let slug = '';
-	export let max_tags = 3;
+	export let max_tags = 5;
 	export let details;
 	export let color =
 		tags.length == 1 || (max_tags == 1 && tags.length > 1) ? tags[0].color : 'primary';

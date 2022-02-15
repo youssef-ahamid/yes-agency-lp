@@ -18,10 +18,10 @@
 		{
 			tags: [
 				{ text: 'marketing', color: 'blue' },
-				{ text: 'ui/ux', color: 'orange' },
 				{ color: 'green', text: 'development' }
+				{ text: 'ui/ux', color: 'orange' },
 			],
-			max_tags: 3,
+			max_tags: 4,
 			slug: 'aramco',
 			client: {
 				logo: 'https://upload.wikimedia.org/wikipedia/commons/e/ee/Aramex_logo.svg',
@@ -31,7 +31,6 @@
 			title: 'ARAMCO Vendors',
 			about: `YesMarketing Created the Entirety of these Brand\'s Written Digital Content, this resulted in 3 cash positive partnerships with several of the oil industry's biggest names. 
 			
-			Project Highlight:
 Our Marketing Team Created the now-famous " We. Know. Oil." tagline which is now a watermark for these brands.
 `,
 			data: [
@@ -59,7 +58,7 @@ Our Marketing Team Created the now-famous " We. Know. Oil." tagline which is now
 				{ text: 'marketing', color: 'blue' },
 				{ color: 'purple', text: 'branding' }
 			],
-			max_tags: 2,
+			max_tags: 4,
 			slug: 'JICA',
 			client: {
 				logo: 'https://upload.wikimedia.org/wikipedia/commons/e/ee/Aramex_logo.svg',
@@ -93,10 +92,10 @@ Our Marketing Team Created the now-famous " We. Know. Oil." tagline which is now
 		{
 			tags: [
 				{ text: 'marketing', color: 'blue' },
-				{ text: 'ui/ux', color: 'orange' },
 				{ color: 'green', text: 'development' }
+				{ text: 'ui/ux', color: 'orange' },
 			],
-			max_tags: 2,
+			max_tags: 4,
 			slug: 'medicon',
 			client: {
 				logo: 'https://upload.wikimedia.org/wikipedia/commons/e/ee/Aramex_logo.svg',
@@ -130,46 +129,10 @@ Our Marketing Team Created the now-famous " We. Know. Oil." tagline which is now
 		{
 			tags: [
 				{ text: 'marketing', color: 'blue' },
-				{ color: 'purple', text: 'branding' }
-			],
-			max_tags: 2,
-			slug: 'JICA',
-			client: {
-				logo: 'https://upload.wikimedia.org/wikipedia/commons/e/ee/Aramex_logo.svg',
-				slug: 'JICA',
-				name: 'JICA'
-			},
-			title: 'JICA',
-			about: `Created all content for their press releases, targeting Egyptian startup founders
-			
-			Their content was featured in prominent Egyptian tech magazines.
-			`,
-			data: [
-				{
-					title: 'prop',
-					content: 'data'
-				},
-				{
-					title: 'prop2',
-					content: 'data2'
-				},
-				{
-					title: 'prop3',
-					content: 'hello world this is me and my world',
-					long: true
-				}
-			],
-			images: [
-				'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVCiB1709wStX0SE_dWhcLLIOYK0qcPNYUeJtewS9AHKJ12quLgGno9SZUEsHO5wi4m6k&usqp=CAU',
-			]
-		},
-		{
-			tags: [
-				{ text: 'marketing', color: 'blue' },
-				{ text: 'ui/ux', color: 'orange' },
 				{ color: 'green', text: 'development' }
+				{ text: 'ui/ux', color: 'orange' },
 			],
-			max_tags: 2,
+			max_tags: 4,
 			slug: 'medicon',
 			client: {
 				logo: 'https://upload.wikimedia.org/wikipedia/commons/e/ee/Aramex_logo.svg',
@@ -211,6 +174,7 @@ Our Marketing Team Created the now-famous " We. Know. Oil." tagline which is now
 		{
 			title: 'Web Development',
 			text: `Our Ivy-league trained web developers and designers use the most sophisticated methods to create the best looking, best functioning technologies for your customers to enjoy.
+			
 			Plot Twist:
 			We do it in around 2 weeks
 			(This site was crafted in 7 days)`,
@@ -243,7 +207,7 @@ Our Marketing Team Created the now-famous " We. Know. Oil." tagline which is now
 			- Bad UX (User Experience Design).
 			If people don\'t know how to use your product seamlessly they will click off and your great product remains unused and your money is wasted.
 			
-			-Bad UI Design
+			- Bad UI Design
 			With great products come great expectations. Any good product or service is reliant on top tier designs to function.
 			
 			Yes Agency has recruited designers who\'ve mastered the best practices in both design and execution to make your product or service flow smoothly.`,
