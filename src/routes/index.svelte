@@ -61,7 +61,7 @@ Our Marketing Team Created the now-famous " We. Know. Oil." tagline which is now
 			max_tags: 4,
 			slug: 'JICA',
 			client: {
-				logo: '/svgs/jica.svg',
+				logo: 'https://iconape.com/wp-content/files/zf/187778/png/JICA-logo.png',
 				slug: 'JICA',
 				name: 'JICA'
 			},
@@ -162,7 +162,7 @@ Our Marketing Team Created the now-famous " We. Know. Oil." tagline which is now
 				}
 			],
 			images: [
-				'https://i.ibb.co/JFsjqMn/6-AE568-DA-69-C5-4988-AEBA-AAF506696236.jpg',
+				'https://uploads-ssl.webflow.com/61badaaab98ae14e4ddfe90a/61badaaab98ae18476dfe9a4_Egicat%20Logo%20Horizontal%20CMYK.svg',
 			],
 			dates: ''
 		}
