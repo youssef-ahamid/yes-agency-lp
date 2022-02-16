@@ -141,7 +141,7 @@ Our Marketing Team Created the now-famous " We. Know. Oil." tagline which is now
 				slug: 'egicat',
 				name: 'egicat'
 			},
-			title: 'EGICAT, Africa\'s Biggest MEP contractor',
+			title: 'EGICAT, Egypt\'s Biggest MEP contractor',
 			about: `Created a Premium Designed Website with a CMS, all web content and imagery included.
 			
 			Crafted and delivered in a total of 3 weeks
