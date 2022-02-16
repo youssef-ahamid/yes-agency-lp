@@ -28,9 +28,7 @@
 	on:mouseleave={() => (hover = false)}
 >
 	<div
-		class="max-h-[70px] min-h-[40px] w-full max-w-[80%] text-{clr.text} {!!details
-			? 'absolute -right-20 top-4 md:-right-12 lg:-right-24'
-			: 'my-4'} fill-current transition duration-300 ease-out"
+		class="max-h-[70px] min-h-[40px] w-full max-w-[80%] text-{clr.text} my-2 fill-current transition duration-300 ease-out"
 		class:brightness-100={!hover}
 		class:brightness-[10]={hover && !(clr.bg == 'tertiary' || clr.bg == 'primary')}
 		class:brightness-0={hover && (clr.bg == 'tertiary' || clr.bg == 'primary')}
