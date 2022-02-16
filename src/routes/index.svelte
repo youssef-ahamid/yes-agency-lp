@@ -24,7 +24,7 @@
 			max_tags: 4,
 			slug: 'aramco',
 			client: {
-				logo: '/svgs/aramco.svg',
+				logo: 'https://logodownload.org/wp-content/uploads/2019/09/saudi-aramco-logo.png',
 				slug: 'ARAMCO VENDORS',
 				name: 'aramco'
 			},
