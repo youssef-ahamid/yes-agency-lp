@@ -358,9 +358,9 @@ Our Marketing Team Created the now-famous " We. Know. Oil." tagline which is now
 			text="We have the most flexible chat team. We can talk via Email, Whatsapp, Zoom, Phone Call, whatever is most convenient for you, we'll do!"
 		/>
 		<Footer
-			tel="+2012000525233"
-			email="youssef@tutoruu.com"
-			address={`231 Z, Hadabat Al Ahram\nGiza, Egypt`}
+			tel="+201127233386"
+			email="moamo314@gmail.com"
+			address={`171 F1, Beverly Hills\nSheikh Zayed, Giza\nEG`}
 			copyright="Forever and Ever"
 		/>
 	</div>
