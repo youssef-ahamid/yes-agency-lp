@@ -12,7 +12,7 @@
 		transition:fade={{ duration: 300 }}
 	>
 		<div
-			class="max-h-fit w-full max-w-[90%] flex-1 overflow-hidden rounded-3xl bg-secondary-light p-12 text-primary md:rounded-[50px] md:p-20"
+			class="max-h-fit w-full md:max-w-[90%] flex-1 overflow-hidden rounded-3xl bg-secondary-light p-12 text-primary md:rounded-[50px] md:p-20"
 			id="modal"
 			transition:fly={{ duration: 300, y: 50, delay: 200 }}
 			use:clickOutside
