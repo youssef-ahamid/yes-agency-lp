@@ -6,7 +6,6 @@
 	export let text = '';
 	export let action = { text: 'start', primary: true, round: true };
 	export let onboarding = {};
-
 	let value = '';
 	let open = false;
 </script>

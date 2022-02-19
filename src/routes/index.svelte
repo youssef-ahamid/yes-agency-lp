@@ -1,3 +1,11 @@
+<script context="module">
+	export async function load({ fetch }) {
+		const res = await fetch('/api/services');
+		const servicelist = await res.json();
+		return { props: { servicelist } };
+	}
+</script>
+
 <script>
 	import { onMount } from 'svelte';
 	import { fade, fly } from 'svelte/transition';
@@ -13,7 +21,8 @@
 	import Budget from '$lib/components/ui/Onboarding/Budget.svelte';
 	import { loaded } from '$lib/store/META';
 	import Modal from '$lib/components/base/Modal.svelte';
-
+	export let servicelist;
+	console.log(servicelist);
 	let projects = [
 		{
 			tags: [
@@ -264,28 +273,7 @@ Our Marketing Team Created the now-famous " We. Know. Oil." tagline which is now
 				props: {
 					title: 'What services',
 					subtitle: 'here is some subheading terxt to explain why we’re asking for this.',
-					options: [
-						{
-							label: 'UI/UX',
-							color: 'orange',
-							checked: true
-						},
-						{
-							label: 'Branding',
-							color: 'purple',
-							checked: false
-						},
-						{
-							label: 'Social Media',
-							color: 'blue',
-							checked: false
-						},
-						{
-							label: 'Dev',
-							color: 'green',
-							checked: false
-						}
-					]
+					options: servicelist
 				}
 			},
 			{
