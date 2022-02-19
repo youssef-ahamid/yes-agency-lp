@@ -9,7 +9,7 @@
 <div class="flex flex-wrap">
 	{#each options as option}
 		<div class="mt-10 w-full md:w-1/3">
-			<Checkbox {...option} bind:checked={option.checked} />
+			<Checkbox label={option.name} color={option.color} bind:checked={option.checked} />
 		</div>
 	{/each}
 </div>

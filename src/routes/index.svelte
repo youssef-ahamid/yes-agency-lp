@@ -1,11 +1,3 @@
-<script context="module">
-	export async function load({ fetch }) {
-		const res = await fetch('/api/services');
-		const servicelist = await res.body;
-		return { props: { servicelist } };
-	}
-</script>
-
 <script>
 	import { onMount } from 'svelte';
 	import { fade, fly } from 'svelte/transition';
@@ -273,7 +265,32 @@ Our Marketing Team Created the now-famous " We. Know. Oil." tagline which is now
 				props: {
 					title: 'What services',
 					subtitle: 'here is some subheading terxt to explain why we’re asking for this.',
-					options: servicelist
+					options: [
+						{
+							color: 'purple',
+							name: 'branding'
+						},
+						{
+							color: 'orange',
+							name: 'graphic design'
+						},
+						{
+							color: 'green',
+							name: 'technology'
+						},
+						{
+							color: 'orange',
+							name: 'ui/ux'
+						},
+						{
+							color: 'purple',
+							name: 'photography & video ads'
+						},
+						{
+							color: 'blue',
+							name: 'social media'
+						}
+					]
 				}
 			},
 			{
