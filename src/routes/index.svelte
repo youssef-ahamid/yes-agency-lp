@@ -1,7 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
 	import { fade, fly } from 'svelte/transition';
-	import Button from '$lib/components/base/Button.svelte'
+	import Button from '$lib/components/base/Button.svelte';
 	import Hero from '$lib/sections/heros/Home.svelte';
 	import FeaturedServices from '$lib/sections/FeaturedServices.svelte';
 	import Contact from '$lib/sections/Contact.svelte';
@@ -321,7 +321,7 @@ Our Marketing Team Created the now-famous " We. Know. Oil." tagline which is now
 			}
 		}
 	};
-	let modal = false
+	let modal = false;
 	onMount(() => {
 		setTimeout(() => {
 			!$loaded ? loaded.set(true) : '';
@@ -330,9 +330,14 @@ Our Marketing Team Created the now-famous " We. Know. Oil." tagline which is now
 </script>
 
 {#if $loaded}
-	<div in:fly={{ x: -30, duration: 600, delay: 600 }} on:fireModal={() => {modal = true}}>
+	<div
+		in:fly={{ x: -30, duration: 600, delay: 600 }}
+		on:fireModal={() => {
+			modal = true;
+		}}
+	>
 		<Hero
-			speed=2
+			speed="2"
 			words={[
 				{ text: 'Marketing Style', color: 'blue' },
 				{ text: 'Tech Savviness', color: 'green' },

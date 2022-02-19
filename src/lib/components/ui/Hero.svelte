@@ -3,10 +3,10 @@
 </script>
 
 <div
-	class="flex min-h-screen w-full items-center justify-center pt-12 md:-mt-28 md:pt-0 max-w-[90%] mx-auto"
+	class="mx-auto flex min-h-screen w-full max-w-[90%] items-center justify-center pt-12 md:-mt-28 md:pt-0"
 >
 	<div
-		class="flex w-full max-w-7xl flex-wrap md:flex-nowrap items-center justify-start overflow-scroll px-2 md:justify-between"
+		class="flex w-full max-w-7xl flex-wrap items-center justify-start overflow-scroll px-2 md:flex-nowrap md:justify-between"
 	>
 		<slot />
 		<div class="absolute right-2 bottom-2">

@@ -5,8 +5,6 @@
 	export let active = false;
 </script>
 
-
-
 {#if active}
 	<div
 		use:wheel={false}

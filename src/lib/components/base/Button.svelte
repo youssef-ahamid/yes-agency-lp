@@ -1,6 +1,5 @@
 <script>
-	import { createEventDispatcher } from "svelte";
-
+	import { createEventDispatcher } from 'svelte';
 
 	export let to = '';
 	export let round = false;
@@ -106,8 +105,8 @@
 		class:text-green={green}
 		class:text-purple={purple}
 	>
-	<a
-		href={to}
+		<a
+			href={to}
 			class:text-secondary={(tertiary && round) || (primary && round) || (secondary && ghost)}
 			class:text-tertiary={tertiary && ghost}
 			class:text-blue={blue && ghost}
@@ -115,9 +114,7 @@
 			class:text-green={green && ghost}
 			class:text-purple={purple && ghost}
 			class:group-hover:text-primary={(underlined && primary) || ghost}
-			class:group-hover:text-secondary={(underlined && secondary) ||
-				round ||
-				(ghost && secondary)}
+			class:group-hover:text-secondary={(underlined && secondary) || round || (ghost && secondary)}
 			class:group-hover:text-tertiary={underlined && tertiary}
 			class:group-hover:text-blue={underlined && blue}
 			class:group-hover:text-orange={underlined && orange}

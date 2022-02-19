@@ -56,7 +56,7 @@
 						on:outroend={next}>{words[index].text}</span
 					>
 				{/if}
-				<br>
+				<br />
 				{titleAfter}
 			</h1>
 			<p>{subtitle}</p>

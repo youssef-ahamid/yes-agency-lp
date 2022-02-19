@@ -109,7 +109,6 @@
 </div>
 <Contact {...contactData} />
 <Footer {...footerData} /> -->
-
 <script>
 	import Modal from '$lib/components/base/Modal.svelte';
 	import Button from '$lib/components/base/Button.svelte';
