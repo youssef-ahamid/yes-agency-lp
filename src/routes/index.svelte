@@ -1,7 +1,7 @@
 <script context="module">
 	export async function load({ fetch }) {
 		const res = await fetch('/api/services');
-		const servicelist = await res.body.json();
+		const servicelist = await res.body;
 		return { props: { servicelist } };
 	}
 </script>
