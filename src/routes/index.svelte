@@ -8,6 +8,7 @@
 	import Footer from '$lib/sections/Footer.svelte';
 	import Projects from '$lib/sections/MainProjects.svelte';
 	import PersonalInfo from '$lib/components/ui/Onboarding/PersonalInfo.svelte';
+	import ProjectInfo from '$lib/components/ui/Onboarding/ProjectInfo.svelte';
 	import ServiceSelect from '$lib/components/ui/Onboarding/ServiceSelect.svelte';
 	import Success from '$lib/components/ui/Onboarding/Success.svelte';
 	import Budget from '$lib/components/ui/Onboarding/Budget.svelte';
@@ -242,29 +243,10 @@ Our Marketing Team Created the now-famous " We. Know. Oil." tagline which is now
 		steps: [
 			{
 				num: 1,
-				component: PersonalInfo,
-				props: {
-					title: 'All I need, is your love tonight.',
-					subtitle:
-						'here is some subheading terxt to explain why we’re asking for this. what is why? why is whatever brings value to the customer',
-					questions: [
-						{
-							value: '',
-							placeholder: 'Company name'
-						},
-						{
-							value: '',
-							placeholder: 'Company name'
-						}
-					]
-				}
-			},
-			{
-				num: 2,
 				component: ServiceSelect,
 				props: {
-					title: 'What services',
-					subtitle: 'here is some subheading terxt to explain why we’re asking for this.',
+					title: 'Service Selection',
+					subtitle: '',
 					options: [
 						{
 							color: 'purple',
@@ -294,14 +276,68 @@ Our Marketing Team Created the now-famous " We. Know. Oil." tagline which is now
 				}
 			},
 			{
-				num: 3,
-				component: Budget,
+				num: 2,
+				component: ProjectInfo,
 				props: {
-					title: 'Budgeting',
-					subtitle: 'here is some subheading terxt to explain why we’re asking for this.',
-					max: 600000,
-					min: 10000,
-					step: 10000
+					title: 'Project Information (optional)',
+					subtitle:
+						'',
+					questions: [
+						{
+							value: '',
+							question: 'What are your goals for this project?',
+							placeholder: 'type here...',
+							textArea: true
+						},
+						{
+							value: '',
+							question: 'when do you want this project completed?',
+							placeholder: 'select date...',
+							date: true
+						}
+					]
+				}
+			},
+			{
+				num: 3,
+				component: PersonalInfo,
+				props: {
+					title: 'Contact Information',
+					subtitle: '',
+					options: [
+						{
+							label: 'Whatsapp',
+							color: 'green'
+						},
+						{
+							label: 'E-mail',
+							color: 'primary'
+						},
+						{
+							label: 'Call',
+							color: 'tertiary'
+						}
+					],
+					questions: [
+						{
+							value: '',
+							placeholder: 'Name',
+							required: true
+						},
+						{
+							value: '',
+							placeholder: 'Phone Number',
+							required: true
+						},
+						{
+							value: '',
+							placeholder: 'Email'
+						},
+						{
+							value: '',
+							placeholder: 'Website'
+						}
+					]
 				}
 			}
 		],
