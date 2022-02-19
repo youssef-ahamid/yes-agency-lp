@@ -1,8 +1,8 @@
 <script context="module">
 	export async function load({ fetch }) {
-		const res = await fetch('/api/sections')
-        const sections = await res.json();
-        return { props: { sections }}
+		const res = await fetch('/api/sections');
+		const sections = await res.json();
+		return { props: { sections } };
 	}
 </script>
 
@@ -10,5 +10,5 @@
 	export let sections;
 </script>
 
-<h1>{ sections[0].title }</h1>
-{@html sections[0].content }
+<h1>{sections[0].title}</h1>
+{@html sections[0].content}

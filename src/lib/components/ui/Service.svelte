@@ -12,7 +12,7 @@
 		<slot name="number" />
 	</h4>
 	<div
-		class="flex w-full flex-wrap md:flex-nowrap items-start justify-between"
+		class="flex w-full flex-wrap items-start justify-between md:flex-nowrap"
 		class:flex-col-reverse={flip}
 		class:md:flex-row-reverse={flip}
 	>
@@ -30,7 +30,10 @@
 			</div>
 		</div>
 		{#if img_src}
-			 <div class="mx-auto my-5 h-80 w-80 overflow-clip rounded-3xl md:mx-6 md:h-96 md:w-96 bg-cover bg-center" style="background-image: url({img_src})"></div>
-		{/if}	
+			<div
+				class="mx-auto my-5 h-80 w-80 overflow-clip rounded-3xl bg-cover bg-center md:mx-6 md:h-96 md:w-96"
+				style="background-image: url({img_src})"
+			/>
+		{/if}
 	</div>
 </div>

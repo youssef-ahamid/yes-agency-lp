@@ -1,7 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
 	import { fade, fly } from 'svelte/transition';
-	import Button from '$lib/components/base/Button.svelte'
+	import Button from '$lib/components/base/Button.svelte';
 	import Hero from '$lib/sections/heros/Home.svelte';
 	import FeaturedServices from '$lib/sections/FeaturedServices.svelte';
 	import Contact from '$lib/sections/Contact.svelte';
@@ -30,7 +30,8 @@
 				name: 'unknown'
 			},
 			title: 'Hamoo',
-			about: 'this is the about section content. we can fill this with some background about the project, things we accomplished, or zebby el manga',
+			about:
+				'this is the about section content. we can fill this with some background about the project, things we accomplished, or zebby el manga',
 			data: [
 				{
 					title: 'prop',
@@ -47,9 +48,9 @@
 				}
 			],
 			images: [
-				'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVCiB1709wStX0SE_dWhcLLIOYK0qcPNYUeJtewS9AHKJ12quLgGno9SZUEsHO5wi4m6k&usqp=CAU',
+				'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVCiB1709wStX0SE_dWhcLLIOYK0qcPNYUeJtewS9AHKJ12quLgGno9SZUEsHO5wi4m6k&usqp=CAU'
 			],
-			dates: 'july \'22'
+			dates: "july '22"
 		},
 		{
 			tags: [{ text: 'ui/ux', color: 'orange' }],
@@ -61,7 +62,8 @@
 				name: 'unknown'
 			},
 			title: 'no branding here',
-			about: 'this is the about section content. we can fill this with some background about the project, things we accomplished, or zebby el manga',
+			about:
+				'this is the about section content. we can fill this with some background about the project, things we accomplished, or zebby el manga',
 			data: [
 				{
 					title: 'prop',
@@ -78,7 +80,7 @@
 				}
 			],
 			images: [
-				'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVCiB1709wStX0SE_dWhcLLIOYK0qcPNYUeJtewS9AHKJ12quLgGno9SZUEsHO5wi4m6k&usqp=CAU',
+				'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVCiB1709wStX0SE_dWhcLLIOYK0qcPNYUeJtewS9AHKJ12quLgGno9SZUEsHO5wi4m6k&usqp=CAU'
 			],
 			dates: 'may 16 - july 12'
 		},
@@ -92,7 +94,8 @@
 				name: 'unknown'
 			},
 			title: 'only dev',
-			about: 'this is the about section content. we can fill this with some background about the project, things we accomplished, or zebby el manga',
+			about:
+				'this is the about section content. we can fill this with some background about the project, things we accomplished, or zebby el manga',
 			data: [
 				{
 					title: 'prop',
@@ -109,7 +112,7 @@
 				}
 			],
 			images: [
-				'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVCiB1709wStX0SE_dWhcLLIOYK0qcPNYUeJtewS9AHKJ12quLgGno9SZUEsHO5wi4m6k&usqp=CAU',
+				'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVCiB1709wStX0SE_dWhcLLIOYK0qcPNYUeJtewS9AHKJ12quLgGno9SZUEsHO5wi4m6k&usqp=CAU'
 			],
 			dates: 'may 16 - july 12'
 		}
@@ -228,7 +231,7 @@
 			}
 		}
 	};
-	let modal = false
+	let modal = false;
 	onMount(() => {
 		setTimeout(() => {
 			!$loaded ? loaded.set(true) : '';
@@ -237,9 +240,14 @@
 </script>
 
 {#if $loaded}
-	<div in:fly={{ x: -30, duration: 600, delay: 600 }} on:fireModal={() => {modal = true}}>
+	<div
+		in:fly={{ x: -30, duration: 600, delay: 600 }}
+		on:fireModal={() => {
+			modal = true;
+		}}
+	>
 		<Hero
-			speed=2
+			speed="2"
 			words={[
 				{ text: 'Marketing Style', color: 'blue' },
 				{ text: 'Tech Savviness', color: 'green' },

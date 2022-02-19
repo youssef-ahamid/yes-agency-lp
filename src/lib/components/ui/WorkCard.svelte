@@ -21,7 +21,7 @@
 </script>
 
 <div
-	class="relative mx-auto w-80 rounded-3xl overflow-clip {!!details
+	class="relative mx-auto w-80 overflow-clip rounded-3xl {!!details
 		? 'flex flex-col flex-nowrap md:w-[70%] md:flex-row'
 		: 'inline-block p-5 md:w-96'} bg-{clr.bg} shadow hover:shadow-2xl hover:shadow-{clr.bg}/20 mx-2 my-4 cursor-crosshair transition duration-300 ease-out md:mx-4 md:my-8"
 	on:mouseenter={() => (hover = true)}
