@@ -55,8 +55,8 @@ Our Marketing Team Created the now-famous " We. Know. Oil." tagline which is now
 		},
 		{
 			tags: [
+				{ color: 'purple', text: 'branding' },
 				{ text: 'marketing', color: 'blue' },
-				{ color: 'purple', text: 'branding' }
 			],
 			max_tags: 4,
 			slug: 'JICA',
@@ -90,9 +90,9 @@ Our Marketing Team Created the now-famous " We. Know. Oil." tagline which is now
 		},
 		{
 			tags: [
-				{ text: 'marketing', color: 'blue' },
 				{ color: 'green', text: 'development' },
-				{ text: 'ui/ux', color: 'orange' }
+				{ text: 'ui/ux', color: 'orange' },
+				{ text: 'marketing', color: 'blue' },
 			],
 			max_tags: 4,
 			slug: 'medicon',
@@ -126,9 +126,9 @@ Our Marketing Team Created the now-famous " We. Know. Oil." tagline which is now
 		},
 		{
 			tags: [
-				{ text: 'marketing', color: 'blue' },
 				{ color: 'green', text: 'development' },
-				{ text: 'ui/ux', color: 'orange' }
+				{ text: 'ui/ux', color: 'orange' },
+				{ text: 'marketing', color: 'blue' },
 			],
 			max_tags: 4,
 			slug: 'egicat',

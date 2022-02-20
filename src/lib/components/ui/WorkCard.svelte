@@ -22,25 +22,26 @@
 
 <div
 	class="relative mx-auto w-80 overflow-clip rounded-3xl {!!details
-		? 'flex flex-col flex-nowrap md:w-[70%] md:flex-row'
+		? 'flex flex-col flex-nowrap md:w-[80%] lg:min-w-[700px] md:flex-row'
 		: 'inline-block p-5 md:w-96'} bg-{clr.bg} shadow hover:shadow-2xl hover:shadow-{clr.bg}/20 mx-2 my-4 cursor-crosshair transition duration-300 ease-out md:mx-4 md:my-8"
 	on:mouseenter={() => (hover = true)}
 	on:mouseleave={() => (hover = false)}
 >
-	<div
-		class="max-h-[70px] min-h-[40px] w-full max-w-[80%] text-{clr.text} {!!details
-			? 'absolute -right-20 top-4 md:-right-12 lg:-right-24'
-			: 'my-4'} fill-current transition duration-300 ease-out"
-		class:brightness-100={!hover}
-		class:brightness-[10]={hover && !(clr.bg == 'tertiary' || clr.bg == 'primary')}
-		class:brightness-0={hover && (clr.bg == 'tertiary' || clr.bg == 'primary')}
-	>
-		<slot name="logo" />
-	</div>
-	<div class="flex flex-col px-5 py-4 {!!details ? 'mt-6 md:mt-8' : ''}">
+		{#if !details }
+			
+		<div
+			class="max-h-[70px] min-h-[40px] w-full max-w-[80%] text-{clr.text} my-4 fill-current transition duration-300 ease-out"
+			class:brightness-100={!hover}
+			class:brightness-[10]={hover && !(clr.bg == 'tertiary' || clr.bg == 'primary')}
+			class:brightness-0={hover && (clr.bg == 'tertiary' || clr.bg == 'primary')}
+		>
+			<slot name="logo" />
+		</div>
+		{/if}
+	<div class="flex flex-col px-5 py-4">
 		<h4
 			class="text-{clr.text} capitalize transition duration-300 ease-out {!!details
-				? 'order-2 md:-mt-4'
+				? 'order-2'
 				: 'order-1'}"
 		>
 			<slot name="title" />
@@ -52,7 +53,7 @@
 		>
 			<slot name="dates" />
 		</p>
-		<div class="my-1 {!!details ? 'order-1' : 'order-3'}">
+		<div class="my-2 {!!details ? 'order-1' : 'order-3'}">
 			{#each tags as tag, i}
 				{#if i == max_tags}
 					<Tag color={hover ? clr.bg : 'blue-dark'} inverted={hover}>+{tags.length - max_tags}</Tag>
@@ -80,14 +81,15 @@
   ),url(${details.img}); ${hover ? 'opacity: 25% !important' : 'opacity: 100 !important'}`
 				: 'display: hidden;'}
 		/>
-		<div class="w-full bg-gradient-to-b to-{clr.bg} relative flex justify-end">
-			<Button
-				ghost
-				tertiary={!hover}
-				secondary={hover && (clr.bg == 'tertiary' || clr.bg == 'primary')}
-				primary={hover && !(clr.bg == 'tertiary' || clr.bg == 'primary')}
-				to="/projects/{slug}">case study</Button
-			>
+		<div class="w-full h-full bg-gradient-to-b to-{clr.bg} relative flex justify-denter items-center">
+			<div
+			class="max-h-full w-full h-auto px-4 text-{clr.text} fill-current transition duration-300 ease-out"
+			class:brightness-100={!hover}
+			class:brightness-[10]={hover && !(clr.bg == 'tertiary' || clr.bg == 'primary')}
+			class:brightness-0={hover && (clr.bg == 'tertiary' || clr.bg == 'primary')}
+		>
+			<slot name="logo" />
+		</div>
 		</div>
 	</div>
 </div>
