@@ -11,7 +11,7 @@
 
 <section id="projects">
 	<h1 class="mx-auto w-full max-w-[90%] py-6 pl-4">{title}</h1>
-	
+
 	{#each projects as project, i}
 		<div class="mx-auto flex w-full justify-center md:max-w-[90%]">
 			<div
@@ -33,9 +33,8 @@
 			</div>
 		</div>
 	{/each}
-	
+
 	<div class="mb-12 flex w-full justify-center py-6 md:mb-24">
 		<Button tertiary round to="/projects">All Projects</Button>
 	</div>
 </section>
-
