@@ -25,7 +25,7 @@
 					slug={project.slug}
 					details={{ img: project.images[0] }}
 				>
-					<img src={project.client.logo} slot="logo" alt={project.client.name} />
+					<img src={project.client.logo} slot="logo" alt={project.client.name} class="h-full max-h-[100px] md:max-h-full mx-auto block" />
 					<span slot="title">{project.title}</span>
 					<span slot="dates">{project.dates}</span>
 					<span slot="about">{project.about}</span>

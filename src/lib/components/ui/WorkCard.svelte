@@ -85,7 +85,7 @@
 		>
 			{#if !!details}
 				<div
-					class="h-auto max-h-full w-full px-4 text-{clr.text} fill-current transition duration-300 ease-out"
+					class="h-auto max-h-full w-full max-w-[90%] mx-auto p-4 text-{clr.text} fill-current transition duration-300 ease-out"
 					class:brightness-100={!hover}
 					class:brightness-[10]={hover && !(clr.bg == 'tertiary' || clr.bg == 'primary')}
 					class:brightness-0={hover && (clr.bg == 'tertiary' || clr.bg == 'primary')}
