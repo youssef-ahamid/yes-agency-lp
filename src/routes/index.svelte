@@ -1,7 +1,6 @@
 <script>
 	import { onMount } from 'svelte';
 	import { fade, fly } from 'svelte/transition';
-	import Button from '$lib/components/base/Button.svelte';
 	import Hero from '$lib/sections/heros/Home.svelte';
 	import FeaturedServices from '$lib/sections/FeaturedServices.svelte';
 	import Contact from '$lib/sections/Contact.svelte';
@@ -11,11 +10,8 @@
 	import ProjectInfo from '$lib/components/ui/Onboarding/ProjectInfo.svelte';
 	import ServiceSelect from '$lib/components/ui/Onboarding/ServiceSelect.svelte';
 	import Success from '$lib/components/ui/Onboarding/Success.svelte';
-	import Budget from '$lib/components/ui/Onboarding/Budget.svelte';
 	import { loaded } from '$lib/store/META';
-	import Modal from '$lib/components/base/Modal.svelte';
-	export let servicelist;
-	console.log(servicelist);
+
 	let projects = [
 		{
 			tags: [
@@ -33,8 +29,7 @@
 			title: 'ARAMCO Vendors',
 			about: `YesMarketing Created the Entirety of these Brand\'s Written Digital Content, this resulted in 3 cash positive partnerships with several of the oil industry's biggest names. 
 			
-Our Marketing Team Created the now-famous " We. Know. Oil." tagline which is now a watermark for these brands.
-`,
+				Our Marketing Team Created the now-famous " We. Know. Oil." tagline which is now a watermark for these brands.`,
 			data: [
 				{
 					title: 'prop',
@@ -56,7 +51,7 @@ Our Marketing Team Created the now-famous " We. Know. Oil." tagline which is now
 		{
 			tags: [
 				{ color: 'purple', text: 'branding' },
-				{ text: 'marketing', color: 'blue' },
+				{ text: 'marketing', color: 'blue' }
 			],
 			max_tags: 4,
 			slug: 'JICA',
@@ -92,7 +87,7 @@ Our Marketing Team Created the now-famous " We. Know. Oil." tagline which is now
 			tags: [
 				{ color: 'green', text: 'development' },
 				{ text: 'ui/ux', color: 'orange' },
-				{ text: 'marketing', color: 'blue' },
+				{ text: 'marketing', color: 'blue' }
 			],
 			max_tags: 4,
 			slug: 'medicon',
@@ -128,7 +123,7 @@ Our Marketing Team Created the now-famous " We. Know. Oil." tagline which is now
 			tags: [
 				{ color: 'green', text: 'development' },
 				{ text: 'ui/ux', color: 'orange' },
-				{ text: 'marketing', color: 'blue' },
+				{ text: 'marketing', color: 'blue' }
 			],
 			max_tags: 4,
 			slug: 'egicat',
@@ -166,6 +161,16 @@ Our Marketing Team Created the now-famous " We. Know. Oil." tagline which is now
 		{ color: 'purple', text: 'branding' },
 		{ color: 'green', text: 'dev' },
 		{ color: 'blue', text: 'social media' }
+	];
+	const images = [
+		'https://uploads-ssl.webflow.com/61badaaab98ae14e4ddfe90a/61badaaab98ae18476dfe9a4_Egicat%20Logo%20Horizontal%20CMYK.svg',
+		'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Saudi_aramco_logo.svg/640px-Saudi_aramco_logo.svg.png',
+		'https://upload.wikimedia.org/wikipedia/commons/4/47/Government_of_Dubai_logo.svg',
+		'https://images.fineartamerica.com/images/artworkimages/medium/2/new-york-university-logo-kls80-kakanda-lee-setiawan-transparent.png',
+		'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Japan_International_Cooperation_Agency_logo.svg/1269px-Japan_International_Cooperation_Agency_logo.svg.png',
+		'http://saudi-multichem.com/assets/image/saudi-multichem-logo.png'
+		// 'https://cdn.shopify.com/s/files/1/0284/6792/0993/t/117/assets/brewsy_logo.svg?v=14633988566632489339',
+		// 'https://d1hbpr09pwz0sk.cloudfront.net/logo_url/medra-arabia-b5d71493',
 	];
 	const services = [
 		{
@@ -363,6 +368,7 @@ Our Marketing Team Created the now-famous " We. Know. Oil." tagline which is now
 		}}
 	>
 		<Hero
+			{images}
 			speed="2"
 			words={[
 				{ text: 'Marketing Style', color: 'blue' },
