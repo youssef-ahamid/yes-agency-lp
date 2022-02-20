@@ -170,7 +170,7 @@
 		'https://upload.wikimedia.org/wikipedia/commons/4/47/Government_of_Dubai_logo.svg',
 		'https://images.fineartamerica.com/images/artworkimages/medium/2/new-york-university-logo-kls80-kakanda-lee-setiawan-transparent.png',
 		'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Japan_International_Cooperation_Agency_logo.svg/1269px-Japan_International_Cooperation_Agency_logo.svg.png',
-		'http://saudi-multichem.com/assets/image/saudi-multichem-logo.png'
+		// 'http://saudi-multichem.com/assets/image/saudi-multichem-logo.png'
 		// 'https://cdn.shopify.com/s/files/1/0284/6792/0993/t/117/assets/brewsy_logo.svg?v=14633988566632489339',
 		// 'https://d1hbpr09pwz0sk.cloudfront.net/logo_url/medra-arabia-b5d71493',
 	];
