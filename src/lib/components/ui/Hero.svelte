@@ -1,5 +1,6 @@
 <script>
 	import ScrollDown from '$lib/components/base/ScrollDown.svelte';
+	export let hideScroller = false;
 </script>
 
 <div
@@ -9,8 +10,10 @@
 		class="flex w-full max-w-7xl flex-wrap items-center justify-start overflow-scroll px-2 md:flex-nowrap md:justify-between"
 	>
 		<slot />
-		<div class="absolute right-2 bottom-2">
-			<ScrollDown />
-		</div>
+		{#if !hideScroller}
+			<div class="absolute right-2 bottom-2">
+				<ScrollDown />
+			</div>
+		{/if}
 	</div>
 </div>
