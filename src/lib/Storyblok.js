@@ -8,7 +8,7 @@ export const Storyblok = new StoryblokClient({
 	oauthToken: 'rbK1W9lDGie71qp5wugytAtt-109909-o3rnYBBrZBPZyUmsb1hf'
 });
 
-export const create = (body = {}) => {
+export const create = async (body = {}) => {
 	Storyblok.post(`spaces/${spaceId}/stories`, { story: { ...body }, publish: 1 })
 		.then((response) => {
 			return response;
@@ -19,7 +19,7 @@ export const create = (body = {}) => {
 };
 
 export const update = (id, body = {}) => {
-	Storyblok.put(`spaces/${spaceId}/stories`, { story: { ...body } })
+	Storyblok.put(`spaces/${spaceId}/stories/${id}`, { story: { ...body } })
 		.then((response) => {
 			return response;
 		})
@@ -28,15 +28,9 @@ export const update = (id, body = {}) => {
 		});
 };
 
-export const get = (id, body = {}) => {
-	Storyblok.get(`spaces/${spaceId}/stories/${id}`, { ...body })
-		.then((response) => {
-			console.log(response);
-			return response;
-		})
-		.catch((error) => {
-			console.log(error);
-		});
+export const get = async (id, body = {}) => {
+	const res = await Storyblok.get(`spaces/${spaceId}/stories/${id}`, { ...body })
+	return { ...res.data.story };	
 };
 
 export const getAll = (body = {}) => {
