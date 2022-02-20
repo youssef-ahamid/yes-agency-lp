@@ -11,6 +11,8 @@
   <svelte:head>
     <title>{pageTitle}</title>
     <meta name="description" content={description} />
+    <meta name="title" content={pageTitle} />
+    <meta name="image" content={img} />
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
