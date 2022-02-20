@@ -177,7 +177,9 @@
 				</g>
 			</svg>
 			<h4 class="w-full capitalize">oops!</h4>
-			<h6 class="max-w-3xl py-4 font-thin">This page is currently under construction. We're launching V2 of this website next week!</h6>
+			<h6 class="max-w-3xl py-4 font-thin">
+				This page is currently under construction. We're launching V2 of this website next week!
+			</h6>
 			<div
 				class="mt-6 flex w-full justify-end"
 				on:click={() => {

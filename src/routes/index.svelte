@@ -21,7 +21,7 @@
 			tags: [
 				{ text: 'marketing', color: 'blue' },
 				{ color: 'green', text: 'development' },
-				{ text: 'ui/ux', color: 'orange' },
+				{ text: 'ui/ux', color: 'orange' }
 			],
 			max_tags: 4,
 			slug: 'aramco',
@@ -50,9 +50,7 @@ Our Marketing Team Created the now-famous " We. Know. Oil." tagline which is now
 					long: true
 				}
 			],
-			images: [
-				'https://i.ibb.co/cX5hDJK/EB38-CA7-D-F70-A-4380-9723-532-DBBDC81-CA.jpg',
-			],
+			images: ['https://i.ibb.co/cX5hDJK/EB38-CA7-D-F70-A-4380-9723-532-DBBDC81-CA.jpg'],
 			dates: ''
 		},
 		{
@@ -87,16 +85,14 @@ Our Marketing Team Created the now-famous " We. Know. Oil." tagline which is now
 					long: true
 				}
 			],
-			images: [
-				'https://i.ibb.co/sjXfs5j/3-FEB6272-7-BB8-47-D2-97-B0-2305-DF994706.jpg',
-			],
+			images: ['https://i.ibb.co/sjXfs5j/3-FEB6272-7-BB8-47-D2-97-B0-2305-DF994706.jpg'],
 			dates: ''
 		},
 		{
 			tags: [
 				{ text: 'marketing', color: 'blue' },
 				{ color: 'green', text: 'development' },
-				{ text: 'ui/ux', color: 'orange' },
+				{ text: 'ui/ux', color: 'orange' }
 			],
 			max_tags: 4,
 			slug: 'medicon',
@@ -125,9 +121,7 @@ Our Marketing Team Created the now-famous " We. Know. Oil." tagline which is now
 					long: true
 				}
 			],
-			images: [
-				'https://i.ibb.co/KxZTpmG/4199-D7-E3-B4-EC-4168-BE71-2-D145-AF5-B35-C.jpg',
-			],
+			images: ['https://i.ibb.co/KxZTpmG/4199-D7-E3-B4-EC-4168-BE71-2-D145-AF5-B35-C.jpg'],
 			dates: ''
 		},
 		{
@@ -143,7 +137,7 @@ Our Marketing Team Created the now-famous " We. Know. Oil." tagline which is now
 				slug: 'egicat',
 				name: 'egicat'
 			},
-			title: 'EGICAT, Egypt\'s Biggest MEP contractor',
+			title: "EGICAT, Egypt's Biggest MEP contractor",
 			about: `Created a Premium Designed Website with a CMS, all web content and imagery included.
 			
 			Crafted and delivered in a total of 3 weeks
@@ -163,9 +157,7 @@ Our Marketing Team Created the now-famous " We. Know. Oil." tagline which is now
 					long: true
 				}
 			],
-			images: [
-				'https://i.ibb.co/JFsjqMn/6-AE568-DA-69-C5-4988-AEBA-AAF506696236.jpg',
-			],
+			images: ['https://i.ibb.co/JFsjqMn/6-AE568-DA-69-C5-4988-AEBA-AAF506696236.jpg'],
 			dates: ''
 		}
 	];
@@ -280,18 +272,17 @@ Our Marketing Team Created the now-famous " We. Know. Oil." tagline which is now
 				component: ProjectInfo,
 				props: {
 					title: 'Project Information (optional)',
-					subtitle:
-						'',
+					subtitle: '',
 					questions: [
 						{
 							value: '',
-							question: 'What are your goals for this project?',
+							title: 'What are your goals for this project?',
 							placeholder: 'type here...',
 							textArea: true
 						},
 						{
 							value: '',
-							question: 'when do you want this project completed?',
+							title: 'when do you want this project completed?',
 							placeholder: 'select date...',
 							date: true
 						}
@@ -345,14 +336,8 @@ Our Marketing Team Created the now-famous " We. Know. Oil." tagline which is now
 			component: Success,
 			props: {
 				title: 'Request Sent!',
-				subtitle: ' heje ehe eejd jd djd djd dushs syx ud us sys syd ddud djdj',
+				subtitle: "We know you have a busy schedule, and w'll be in contact asap!",
 				actions: [
-					{
-						underlined: true,
-						tertiary: true,
-						to: '/projects',
-						text: 'browse projects'
-					},
 					{
 						underlined: true,
 						to: '/',

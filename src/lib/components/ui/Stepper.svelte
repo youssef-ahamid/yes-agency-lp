@@ -7,6 +7,7 @@
 	import Button from '../base/Button.svelte';
 
 	export let steps, success;
+	export let action = () => {};
 	export let currentStep = {};
 	export let open = false;
 	export let allowNav = true;
@@ -15,13 +16,15 @@
 		currentStep = steps[currentStep.num - 2];
 	}
 
-	function next() {
+	async function next() {
 		if (currentStep.num < steps.length) currentStep = steps[currentStep.num];
-		else
+		else {
+			await action();
 			currentStep = {
 				num: steps.length + 1,
 				...success
 			};
+		}
 	}
 
 	let nextAllowed = true;

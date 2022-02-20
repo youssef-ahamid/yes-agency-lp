@@ -1,11 +1,20 @@
 <script>
-	export let checked, label;
+	import { createEventDispatcher } from 'svelte';
+	const dispatch = createEventDispatcher();
+
+	export let label = '';
+	export let checked = false;
 	export let color = 'primary';
+
+	function change() {
+		if (checked) dispatch('check', label);
+		else dispatch('uncheck', label);
+	}
 </script>
 
 <div class="relative h-12 max-w-md">
 	<label for="checkbox" class="relative">
-		<div class="absolute left-1 top-2 z-10 h-3 w-3 md:h-4 md:w-4">
+		<div class="absolute left-1 top-1.5 z-10 h-3 w-3 md:h-4 md:w-4">
 			<svg
 				version="1.1"
 				id="Capa_1"
@@ -38,10 +47,11 @@
 			name="checkbox"
 			type="checkbox"
 			bind:checked
+			on:change={change}
 			class="peer h-5 w-5 appearance-none rounded-md border-2 border-primary border-opacity-50 bg-transparent outline-none transition duration-200 ease-out focus:border-opacity-80 group-hover:border-opacity-80 md:h-6 md:w-6 checked:bg-{color} checked:border-opacity-100 focus:ring-1 focus:ring-{color} checked:ring-{color} cursor-pointer"
 		/>
 		<h6
-			class="whitespace-nowrap text-primary text-opacity-50 peer-checked:text-{color} ml-4 mr-1 transition duration-300 ease-out group-hover:text-opacity-80 peer-checked:text-opacity-100 peer-focus:text-opacity-80 capitalize truncate"
+			class="whitespace-nowrap text-primary text-opacity-50 peer-checked:text-{color} ml-4 mr-1 truncate capitalize transition duration-300 ease-out group-hover:text-opacity-80 peer-checked:text-opacity-100 peer-focus:text-opacity-80"
 		>
 			{label}
 		</h6>

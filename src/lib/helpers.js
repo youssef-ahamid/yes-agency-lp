@@ -1,6 +1,9 @@
 export const pluralize = (i, singular = '', plural = 's') => {
 	return i % 2 == 0 ? singular : plural;
 };
+export const slugify = (s) => {
+	return s.replace(' ', '-').toLowerCase();
+};
 
 export const post = async (url = '', data = {}) => {
 	// Default options are marked with *
@@ -11,5 +14,5 @@ export const post = async (url = '', data = {}) => {
 		},
 		body: JSON.stringify(data) // body data type must match "Content-Type" header
 	});
-	return response.json(); // parses JSON response into native JavaScript objects
+	return response;
 };

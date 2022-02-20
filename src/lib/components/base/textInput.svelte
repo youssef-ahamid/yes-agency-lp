@@ -10,7 +10,6 @@
 	export let context = '';
 	export let textArea = false;
 	export let date = false;
-	export let title = '';
 
 	const dispatch = createEventDispatcher();
 
@@ -21,23 +20,24 @@
 	$: value = trim ? value.trim() : value; // remove whitespace
 </script>
 
-<div class="relative my-4 inline-block md:my-8" class:my-12={big} >
-	{#if title.length > 0}
-		<h4>{title}</h4>
-	{/if}
+<div
+	class="relative my-4 max-h-min md:my-8 {date ? 'w-40 md:w-64' : ''}"
+	class:my-12={big}
+	class:w-full={textArea}
+>
 	<div class="flex items-center justify-between">
 		{#if textArea}
 			<textarea
 				bind:value
 				{placeholder}
-				class="peer mx-2 appearance-none bg-primary bg-opacity-5 focus:bg-opacity-25 font-slab font-bold text-primary text-opacity-75 placeholder-primary placeholder-opacity-50 outline-none focus:text-opacity-100 focus:placeholder-opacity-75 w-full"
+				class="peer mx-2 h-12 w-full appearance-none rounded-lg bg-primary bg-opacity-5 p-4 font-slab font-bold text-primary text-opacity-75 placeholder-primary placeholder-opacity-50 outline-none focus:bg-opacity-10 focus:text-opacity-100 focus:placeholder-opacity-75 md:h-20"
 			/>
 		{:else if date}
 			<input
 				type="date"
 				bind:value
 				{placeholder}
-				class="peer mx-2 appearance-none bg-transparent font-slab font-bold text-primary text-opacity-75 placeholder-primary placeholder-opacity-50 outline-none focus:text-opacity-100 focus:placeholder-opacity-75 w-16 md:w-24"
+				class="peer appearance-none bg-transparent font-slab font-bold text-primary text-opacity-75 placeholder-primary placeholder-opacity-50 outline-none focus:text-opacity-100 focus:placeholder-opacity-75 w-40 md:w-54 h-12 md:h-20"
 			/>
 		{:else}
 			<input
@@ -67,3 +67,5 @@
 		<p class="body-sm absolute top-[100%] mt-6 font-thin text-opacity-75">{context}</p>
 	</div>
 </div>
+
+<div class="md:mx-32" />

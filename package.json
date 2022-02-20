@@ -29,6 +29,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"colorthief": "^2.3.2"
+		"colorthief": "^2.3.2",
+		"storyblok-js-client": "^4.2.1"
 	}
 }
