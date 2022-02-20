@@ -10,6 +10,7 @@
 	export let title, subtitle, words, titleAfter;
 	export let speed = 1;
 	export let actions = [];
+	export let images = [];
 
 	let index = 0;
 
@@ -41,9 +42,9 @@
 	onMount(() => setup());
 </script>
 
-<section {id} on:fireModal>
+<section {id} on:fireModal class="relative">
 	<Navbar color={words[index].color} />
-	<Hero>
+	<Hero hideScroller>
 		<div class="max-w-3xl py-2 px-2">
 			<h1 class="my-4 md:my-6">
 				{title}
@@ -76,4 +77,16 @@
 			</div>
 		</div>
 	</Hero>
+	<div class="absolute inset-x-0 bottom-8 flex h-24 w-full flex-col justify-center md:h-40">
+		<h6 class="mx-auto py-3 text-center text-opacity-50 md:pb-6">Trusted By</h6>
+		<div class="flex flex-wrap items-center justify-center">
+			{#each images as src}
+				<img
+					{src}
+					alt=""
+					class="m-2 h-6 w-auto opacity-50 brightness-[5000%] md:mx-6 md:my-4 md:h-12 lg:mx-12"
+				/>
+			{/each}
+		</div>
+	</div>
 </section>
