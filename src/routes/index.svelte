@@ -179,7 +179,7 @@ Our Marketing Team Created the now-famous " We. Know. Oil." tagline which is now
 			action: {
 				green: true,
 				text: 'Get Started',
-				to: '/services/dev',
+				to: '#connect',
 				underlined: true
 			}
 		},
@@ -192,7 +192,7 @@ Our Marketing Team Created the now-famous " We. Know. Oil." tagline which is now
 			action: {
 				blue: true,
 				text: 'Get Started',
-				to: '/services/branding',
+				to: '#connect',
 				underlined: true
 			}
 		},
@@ -212,7 +212,7 @@ Our Marketing Team Created the now-famous " We. Know. Oil." tagline which is now
 			action: {
 				orange: true,
 				text: 'Get Started',
-				to: '/services/ui-ux',
+				to: '#connect',
 				underlined: true
 			}
 		},
@@ -226,7 +226,7 @@ Our Marketing Team Created the now-famous " We. Know. Oil." tagline which is now
 			action: {
 				purple: true,
 				text: 'Get Started',
-				to: '/services/branding',
+				to: '#connect',
 				underlined: true
 			}
 		}
@@ -377,7 +377,7 @@ Our Marketing Team Created the now-famous " We. Know. Oil." tagline which is now
 			Get your brand to keep up with the most recent trends, create a brand that lasts
 			and do it with style."
 			actions={[
-				{ round: true, text: 'Get Started', to: '/services/branding' },
+				{ round: true, text: 'Get Started', to: '#connect' },
 				{ underlined: true, text: 'Get in Touch', to: '/projects' }
 			]}
 		/>

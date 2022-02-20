@@ -27,8 +27,8 @@
 		</svg>
 	</a>
 	<div class="hidden lg:flex">
-		<Button ghost primary to="/projects">our work</Button>
-		<Button ghost primary to="/services/branding">what we do</Button>
+		<Button ghost primary to="#projects">our work</Button>
+		<Button ghost primary to="#services">what we do</Button>
 	</div>
 	<div class="hidden lg:flex">
 		<Button
@@ -103,8 +103,8 @@
 		/>
 	</svg>
 	<div class="my-20">
-		<Button ghost primary to="/projects">our work</Button>
-		<Button ghost primary to="/services/branding">what we do</Button>
+		<Button ghost primary to="#projects">our work</Button>
+		<Button ghost primary to="#services">what we do</Button>
 	</div>
 	<div class="absolute bottom-10 flex flex-wrap justify-center">
 		<Button
