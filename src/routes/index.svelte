@@ -1,6 +1,8 @@
 <script>
 	import { onMount } from 'svelte';
 	import { fade, fly } from 'svelte/transition';
+
+	import SEO from "$lib/components/seo/index.svelte"
 	import Hero from '$lib/sections/heros/Home.svelte';
 	import FeaturedServices from '$lib/sections/FeaturedServices.svelte';
 	import Contact from '$lib/sections/Contact.svelte';
@@ -359,6 +361,8 @@
 		}, 5000);
 	});
 </script>
+
+<SEO title="The Digital Agency for Modern Businesses" description="Yes. Agency is one of the biggest digital agencies in Egypt, with over 100 projects completed in fields ranging from oil & gas to medical real estate. We offer high fidelity + low cost tech and the marketing efforts to make your company a household name."/>
 
 {#if $loaded}
 	<div
