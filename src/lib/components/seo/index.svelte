@@ -3,7 +3,7 @@
    
     export let description = '';
     export let title = '';
-    export let img = 'https://i.ibb.co/Ny1Lkwg/Frame-4.png';
+    export let img = 'https://i.ibb.co/GWwSntB/frame-4-1.png';
    
     const pageTitle = `${siteTitle} | ${title}`;
   </script>
