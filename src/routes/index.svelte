@@ -362,7 +362,7 @@
 	});
 </script>
 
-<SEO title="The Digital Agency for Modern Businesses" description="Yes. Agency is one of the biggest digital agencies in Egypt, with over 100 projects completed in fields ranging from oil & gas to medical real estate. We offer high fidelity + low cost tech and the marketing efforts to make your company a household name."/>
+<SEO title="The Digital Agency for Modern Businesses" description="Make your company extraordinary using the latest world-class marketing, technology & design innovations. From mega companies to record-breaking startups, we've helped market leaders of all sizes, across the MENA region and Europe, wow their customers and conquer their markets. Get started today"/>
 
 {#if $loaded}
 	<div
