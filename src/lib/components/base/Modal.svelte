@@ -22,9 +22,3 @@
 		</div>
 	</div>
 {/if}
-
-<style>
-	#modal {
-		filter: drop-shadow(0 25px 25px rgb(36 35 49 / 0.15));
-	}
-</style>
