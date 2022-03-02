@@ -357,17 +357,19 @@
 			}
 		}
 	};
-	let modal = false;
+	let unique;
 	onMount(() => {
+		unique = {}
 		setTimeout(() => {
 			!$loaded ? loaded.set(true) : '';
+			unique = {}
 		}, 5000);
 	});
 </script>
 
 <SEO title="The Digital Agency for Modern Businesses" description="Make your company extraordinary using the latest world-class marketing, technology & design innovations. From mega companies to record-breaking startups, we've helped market leaders of all sizes, across the MENA region and Europe, wow their customers and conquer their markets. Get started today"/>
 
-{#if $loaded}
+{#key unique}
 	<div
 		in:fly={{ x: -30, duration: 600, delay: 600 }}
 		on:fireModal={() => {
@@ -408,7 +410,8 @@
 			copyright="Forever and Ever"
 		/>
 	</div>
-{:else}
+{/key}
+{#if !$loaded}
 	<svg
 		out:fade={{ duration: 200 }}
 		width="154"
