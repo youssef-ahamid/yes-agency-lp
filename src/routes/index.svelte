@@ -384,7 +384,7 @@
   on:fireModal={() => {
     modal = true;
   }}
-  class={$loaded ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"}
+  class={`${$loaded ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"} transition duration-500 ease-out`}
 >
   <Hero
     {images}
