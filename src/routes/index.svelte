@@ -1,7 +1,10 @@
+<script context="module">
+	export const prerender = true;
+</script>
+
 <script>
 	import { onMount } from 'svelte';
 	import { fade, fly } from 'svelte/transition';
-
 	import SEO from "$lib/components/seo/index.svelte"
 	import Hero from '$lib/sections/heros/Home.svelte';
 	import FeaturedServices from '$lib/sections/FeaturedServices.svelte';
