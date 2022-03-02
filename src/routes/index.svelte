@@ -357,12 +357,11 @@
 			}
 		}
 	};
-	let unique;
+	let unique = {};
+	let modal = false
 	onMount(() => {
-		unique = {}
 		setTimeout(() => {
 			!$loaded ? loaded.set(true) : '';
-			unique = {}
 		}, 5000);
 	});
 </script>
@@ -371,7 +370,7 @@
 
 {#key unique}
 	<div
-		in:fly={{ x: -30, duration: 600, delay: 600 }}
+		in:fly={{ x: -30, duration: 600, delay: 6000 }}
 		on:fireModal={() => {
 			modal = true;
 		}}
